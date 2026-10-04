@@ -27,6 +27,7 @@
     {"id":{"name":"spr_player_down_idle","path":"sprites/spr_player_down_idle/spr_player_down_idle.yy",},},
     {"id":{"name":"spr_player_down_walk","path":"sprites/spr_player_down_walk/spr_player_down_walk.yy",},},
     {"id":{"name":"spr_player_up_idle","path":"sprites/spr_player_up_idle/spr_player_up_idle.yy",},},
+    {"id":{"name":"spr_player_up_walk","path":"sprites/spr_player_up_walk/spr_player_up_walk.yy",},},
     {"id":{"name":"spr_testing","path":"sprites/spr_testing/spr_testing.yy",},},
   ],
   "resourceType":"GMProject",
