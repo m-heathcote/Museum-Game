@@ -5,4 +5,4 @@ camera = view_camera[0];
 view_w = camera_get_view_width(camera);
 view_h = camera_get_view_height(camera);
 
-camera_speed = 0.08;
+camera_speed = 0.09;

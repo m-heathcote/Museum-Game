@@ -1,5 +1,5 @@
-move_speed = 1.7;   // 1.7
-run_speed = 3.2;    // 3.2
+move_speed = 1.8;
+run_speed = 3.3;
 run_key = vk_shift;
 
 tilemap = layer_tilemap_get_id("Tiles_Col");

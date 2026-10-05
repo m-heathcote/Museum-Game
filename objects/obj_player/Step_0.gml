@@ -19,8 +19,9 @@ _hor = lengthdir_x(_len, _dir);
 _ver = lengthdir_y(_len, _dir);
 
 // run if control held
-curr_speed = keyboard_check(run_key) ? run_speed : move_speed;
-
+is_running = keyboard_check(run_key);
+curr_speed = is_running ? run_speed : move_speed;
+animation_speed = is_running ? 22 : -1;
 
 // actually move
 move_and_collide(
@@ -38,9 +39,16 @@ move_and_collide(
 if (_hor != 0 or _ver != 0 && alarm[3] < 0)
 {
     facing = point_direction(0, 0, _hor, _ver);
-    set_player_sprite(get_direction(facing), "walk");
+    if (is_running)
+    {
+        set_player_sprite(get_direction(facing), "run");
+    }
+    else
+    {
+        set_player_sprite(get_direction(facing), "walk");
+    }
 }
-else if (alarm[3] < 0)
+else
 {
     set_player_sprite(get_direction(facing), "idle");
 }
