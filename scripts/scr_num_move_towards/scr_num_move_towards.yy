@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_move_towards",
+  "%Name":"scr_num_move_towards",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_move_towards",
+  "name":"scr_num_move_towards",
   "parent":{
     "name":"Player Movement",
     "path":"folders/Scripts/Player Movement.yy",

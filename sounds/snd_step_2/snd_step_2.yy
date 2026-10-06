@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_step_2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Steps",
+    "path":"folders/Sounds/Steps.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

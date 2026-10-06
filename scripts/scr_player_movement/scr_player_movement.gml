@@ -39,13 +39,13 @@ function update_speed()
             _acceleration = run_acceleration;
         }
         
-        hsp = move_towards(hsp, _target_hsp, _acceleration);
-        vsp = move_towards(vsp, _target_vsp, _acceleration);
+        hsp = num_move_towards(hsp, _target_hsp, _acceleration);
+        vsp = num_move_towards(vsp, _target_vsp, _acceleration);
     }
     else
     {
-        hsp = move_towards(hsp, 0, deceleration);
-        vsp = move_towards(vsp, 0, deceleration);
+        hsp = num_move_towards(hsp, 0, deceleration);
+        vsp = num_move_towards(vsp, 0, deceleration);
     }
 }
 

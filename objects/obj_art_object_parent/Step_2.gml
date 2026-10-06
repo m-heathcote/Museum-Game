@@ -1,7 +1,11 @@
 if (at_home)
 {
     
-    depth = -room_height;
+    depth = -art_home.bbox_bottom - 1;
+}
+else if (held)
+{
+    depth = -player.bbox_bottom;
 }
 else
 {
