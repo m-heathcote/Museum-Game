@@ -1,12 +1,3 @@
-/*
-// no movement if in dialog
-if (instance_exists(obj_dialog))
-{
-    set_player_sprite(get_direction(facing), "idle");
-    
-    exit;
-}*/
-    
 // horizontal input (1 if D held, -1 if A held)
 // vertical input (1 if S held, -1 if W held)
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
@@ -21,7 +12,6 @@ _ver = lengthdir_y(_len, _dir);
 // run if control held
 is_running = keyboard_check(run_key);
 curr_speed = is_running ? run_speed : move_speed;
-animation_speed = is_running ? 22 : -1;
 
 // actually move
 move_and_collide(
@@ -36,7 +26,7 @@ move_and_collide(
 );
 
 // if player is moving
-if (_hor != 0 or _ver != 0 && alarm[3] < 0)
+if (_hor != 0 or _ver != 0)
 {
     facing = point_direction(0, 0, _hor, _ver);
     if (is_running)
