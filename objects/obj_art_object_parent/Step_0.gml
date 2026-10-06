@@ -1,0 +1,1 @@
+blocks_player = !at_home;

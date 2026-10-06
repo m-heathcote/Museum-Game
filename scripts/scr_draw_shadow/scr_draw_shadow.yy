@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_draw_shadow",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Drawing Player",
+    "path":"folders/Scripts/Drawing Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

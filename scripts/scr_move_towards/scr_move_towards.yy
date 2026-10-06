@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_collisions",
+  "%Name":"scr_move_towards",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_collisions",
+  "name":"scr_move_towards",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Player Movement",
+    "path":"folders/Scripts/Player Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

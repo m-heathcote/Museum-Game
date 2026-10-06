@@ -1,4 +1,5 @@
-//collision_tilemap = layer_tilemap_get_id("Tiles_Col");
+tiles_col = layer_tilemap_get_id("Tiles_Col");
+//tiles_above = layer_tilemap_get_id("Tiles_Above_Player");
 
 
 

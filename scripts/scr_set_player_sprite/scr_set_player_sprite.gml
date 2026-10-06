@@ -25,14 +25,7 @@ function set_player_sprite(_facing, _action)
         else if (_action == "run") { obj_player.sprite_index = spr_player_walk_down; }
     }
     
-    if (_action == "run")
-    {
-        obj_player.image_speed = 1.8;
-    }
-    else
-    {
-        obj_player.image_speed = 1;
-    }
+    update_animation_speed(_action);
 }
 
 function get_direction(_angle)
@@ -56,5 +49,27 @@ function get_direction(_angle)
     else if (_angle > 225 && _angle <= 315)
     {
         return "down"
+    }
+}
+
+function update_animation_speed(_action)
+{
+    if (_action == "walk" || _action == "run")
+    {
+        var _speed = point_distance(0, 0, obj_player.hsp, obj_player.vsp);
+        var _max_speed = obj_player.is_running ? obj_player.run_speed : obj_player.move_speed;
+        
+        var _max_image_speed = obj_player.is_running
+            ? obj_player.run_anim_speed
+            : obj_player.walk_anim_speed;
+        
+        var _target_image_speed = (_speed / _max_speed) * (_max_image_speed);
+        
+        // not lerped because move speed is already smoothed with acceleration
+        obj_player.image_speed = _target_image_speed;
+    }
+    else
+    {
+    	obj_player.image_speed = 1;
     }
 }

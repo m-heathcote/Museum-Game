@@ -27,6 +27,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
+    {"$GMObjectProperty":"v2","%Name":"blocks_player","filters":[],"listItems":[],"multiselect":false,"name":"blocks_player","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"has_shadow","filters":[],"listItems":[],"multiselect":false,"name":"has_shadow","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"shadow_x_offset","filters":[],"listItems":[],"multiselect":false,"name":"shadow_x_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"shadow_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"shadow_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
