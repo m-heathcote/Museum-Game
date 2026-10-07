@@ -1,4 +1,4 @@
-if (at_home)
+if (at_home || (anim_active && anim_type == "put_home"))
 {
     
     depth = -art_home.bbox_bottom - 1; // above art home

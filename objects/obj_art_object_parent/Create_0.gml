@@ -27,103 +27,66 @@ anim_target_y = 0;
 pickup_anim_duration = 35;
 setdown_anim_duration = 28;
 
-function start_pickup(_player)
-{
-    anim_active = true;
-    anim_type = "pickup";
-    anim_progress = 0;
-    
-    _player.obj_anim_active = true;
-
-    anim_start_x = x;
-    anim_start_y = y;
-
-    anim_target_x = _player.x + _player.held_obj_x_offset;
-    anim_target_y = _player.y + _player.held_obj_y_offset;
-
-    // Make the object arc
-    var _arc_size = 22;
-    anim_control_x = (anim_start_x + anim_target_x) / 2;
-    anim_control_y = min(anim_start_y, anim_target_y) - _arc_size;
-}
-
 function pick_up()
 {
-    if (player.held_obj == noone)
-    {
-        // Player pickup animation
-        player.play_anim("pickup");
-        
-        player.held_obj = id;
-        
-        audio_play_sound(snd_pick_up, 0, false);
-        
-        start_pickup(player);
-    }
-}
-
-function set_as_held(_player)
-{
-    anim_active = false;
-    held = true;
-    
-    _player.obj_anim_active = false;
-    
-    x = player.x + player.held_obj_x_offset;
-    y = player.y + player.held_obj_y_offset;
-}
-
-function start_setdown(_player)
-{
-    anim_active = true;
-    anim_type = "setdown";
-    anim_progress = 0;
-    
-    _player.obj_anim_active = true;
-    
-    anim_start_x = x;
-    anim_start_y = y;
-    
-    anim_target_x = _player.place_obj_x;
-    anim_target_y = _player.place_obj_y;
-    
-    // Make the object arc
-    var _arc_size = 15;
-    anim_control_x = (anim_start_x + anim_target_x) / 2;
-    anim_control_y = min(anim_start_y, anim_target_y) - _arc_size;
+    pick_up_object();
 }
 
 function set_down()
+{
+    set_down_object();
+}
+
+interact_func = pick_up;
+
+function put_back_home()
 {
     if (player.held_obj == id)
     {
         // Player setdown animation
         player.play_anim("setdown");
         
-        audio_play_sound(snd_set_down, 0, false);
+        // Play sound
+        audio_play_sound(snd_in_place, 0, false);
         
-        start_setdown(player);
+        // Start setdown
+        anim_active = true;
+        anim_type = "put_home";
+        anim_progress = 0;
+        
+        player.obj_anim_active = true;
+        
+        anim_start_x = x;
+        anim_start_y = y;
+        
+        anim_target_x = art_home.x;
+        anim_target_y = art_home.y;
+        
+        // Make the object arc
+        var _arc_size = 15;
+        anim_control_x = (anim_start_x + anim_target_x) / 2;
+        anim_control_y = min(anim_start_y, anim_target_y) - _arc_size;
     }
 }
 
-function set_not_held(_player)
+function set_at_home()
 {
     anim_active = false;
     held = false;
+    at_home = true;
     
     x = anim_target_x;
     y = anim_target_y;
     
-    if (_player.is_overlapping_object(id))
+    /*
+    if (player.is_overlapping_object(id))
     {
         ignore_player_collision = true;
-    }
+    }*/
     
-    _player.obj_anim_active = false;
-    _player.held_obj = noone;
+    player.obj_anim_active = false;
+    player.held_obj = noone;
 }
-
-interact_func = pick_up;
 
 function check_place_collisions(_x, _y)
 {
@@ -162,6 +125,6 @@ function check_place_collisions(_x, _y)
 	{
 		return true;
 	}
-
+    
     return false;
 }

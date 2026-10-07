@@ -24,10 +24,16 @@ if (anim_active)
         
         anim_progress += 1 / pickup_anim_duration;
     }
-    if (anim_type == "setdown")
+    else if (anim_type == "setdown")
     {
         anim_target_x = player.place_obj_x;
         anim_target_y = player.place_obj_y;
+        
+        anim_progress += 1 / setdown_anim_duration;
+    }
+    else if (anim_type == "put_home")
+    {
+        // no need to update target x,y
         
         anim_progress += 1 / setdown_anim_duration;
     }
@@ -49,9 +55,11 @@ if (anim_active)
     if (anim_progress >= 1)
     {
         if (anim_type == "pickup")
-            set_as_held(player);
+            set_as_held();
         else if (anim_type == "setdown")
-            set_not_held(player);
+            set_not_held();
+        else if (anim_type == "put_home")
+            set_at_home();
     }
 }
 
