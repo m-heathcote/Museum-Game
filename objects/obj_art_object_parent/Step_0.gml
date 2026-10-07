@@ -1,4 +1,4 @@
-// Update Vars                            ********************* improve to only set when needed?
+// Update Vars                      ****************** TODO: improve to only set when needed?
 blocks_player = !at_home;
 interactable = !at_home && !held;
 has_shadow = !at_home && !held && !anim_active;
