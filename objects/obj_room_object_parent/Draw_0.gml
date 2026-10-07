@@ -9,3 +9,12 @@ if (showing_outline && outline_enabled)
 }
 
 draw_self();
+
+if (show_collision_mask_corners)
+{
+    draw_rectangle_colour(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_blue, c_green, c_aqua, true);
+    draw_point_colour(bbox_left, bbox_top, c_red);
+    draw_point_colour(bbox_left, bbox_bottom, c_red);
+    draw_point_colour(bbox_right, bbox_top, c_red);
+    draw_point_colour(bbox_right, bbox_bottom, c_red);
+}

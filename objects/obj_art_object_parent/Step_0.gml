@@ -1,13 +1,33 @@
-// Update Vars
+// Update Vars                            ********************* improve to only set when needed?
 blocks_player = !at_home;
 interactable = !at_home && !held;
 has_shadow = !at_home && !held && !anim_active;
+
+if (ignore_player_collision)
+{
+    if (!player.is_overlapping_object(id))
+    {
+        ignore_player_collision = false;
+    }
+}
 
 // Inherit the parent event
 event_inherited();
 
 if (anim_active)
 {
+    // Update in case player moved
+    if (anim_type == "pickup")
+    {
+        anim_target_x = player.x + player.held_obj_x_offset;
+        anim_target_y = player.y + player.held_obj_y_offset;
+    }
+    if (anim_type == "setdown")
+    {
+        anim_target_x = player.place_obj_x;
+        anim_target_y = player.place_obj_y;
+    }
+    
     anim_progress += 1 / anim_duration;
 
     var _t = clamp(anim_progress, 0, 1);

@@ -59,6 +59,7 @@
     {"id":{"name":"scr_object_collisions","path":"scripts/scr_object_collisions/scr_object_collisions.yy",},},
     {"id":{"name":"scr_player_movement","path":"scripts/scr_player_movement/scr_player_movement.yy",},},
     {"id":{"name":"scr_set_player_sprite","path":"scripts/scr_set_player_sprite/scr_set_player_sprite.yy",},},
+    {"id":{"name":"scr_update_place_position","path":"scripts/scr_update_place_position/scr_update_place_position.yy",},},
     {"id":{"name":"snd_in_place","path":"sounds/snd_in_place/snd_in_place.yy",},},
     {"id":{"name":"snd_pick_up","path":"sounds/snd_pick_up/snd_pick_up.yy",},},
     {"id":{"name":"snd_set_down","path":"sounds/snd_set_down/snd_set_down.yy",},},

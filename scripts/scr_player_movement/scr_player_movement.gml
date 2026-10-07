@@ -1,5 +1,12 @@
 function get_input()
 {
+    if (anim_active)
+    {
+        input_x = 0;
+        input_y = 0;
+        return;
+    }
+    
     var _right = keyboard_check(ord("D")) || keyboard_check(vk_right);
     var _left  = keyboard_check(ord("A")) || keyboard_check(vk_left);
     

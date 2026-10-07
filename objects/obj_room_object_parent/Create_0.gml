@@ -7,6 +7,10 @@ player_in_range = false;    // if close enough to player to interact with
 outline_enabled = true;     // if an outline should be shown when in range
 showing_outline = false;    // if currently displaying a white outline
 
+ignore_player_collision = false;
+
+show_collision_mask_corners = false;  // for debugging
+
 function test_interact()
 {
     show_debug_message("interact!");
