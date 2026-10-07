@@ -24,14 +24,15 @@
   "height":32,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"61810139-c657-44b2-b9bd-3bbf909ea25a","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"61810139-c657-44b2-b9bd-3bbf909ea25a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"4636a3c8-0b74-4f65-922f-c5974c284272","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4636a3c8-0b74-4f65-922f-c5974c284272","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_player_idle_up",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"idle",
+    "path":"folders/Sprites/Player/idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -31,9 +31,17 @@ place_obj_y = y + place_obj_y_offset;
 
 interact_key = ord("E");
 held_obj = noone;
-anim_active = false;
+
+obj_anim_active = false;
+player_anim_active = false;
 
 function is_overlapping_object(_object)
 {
     return place_meeting(x, y, _object);
+}
+
+function play_anim(_action)
+{
+    player_anim_active = true;
+    set_player_sprite(get_direction(facing), _action);
 }

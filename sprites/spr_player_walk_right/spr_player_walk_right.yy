@@ -30,14 +30,15 @@
   "height":32,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"0af358db-efaa-478a-aa46-7cf057a507cd","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"0af358db-efaa-478a-aa46-7cf057a507cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"9e22ecf2-1aef-4564-9282-a8a4149d8297","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"9e22ecf2-1aef-4564-9282-a8a4149d8297","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_player_walk_right",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"walk",
+    "path":"folders/Sprites/Player/walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

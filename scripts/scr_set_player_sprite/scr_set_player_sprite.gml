@@ -1,31 +1,67 @@
+// currently requires facing input as get_direction(facing) *****************************
 function set_player_sprite(_facing, _action)
 {
+    var _already_set = false;
+    
     if (_facing == "right")
     {
-        if (_action == "idle") { obj_player.sprite_index = spr_player_idle_right; }
-        else if (_action == "walk") { obj_player.sprite_index = spr_player_walk_right; }
-        else if (_action == "run") { obj_player.sprite_index = spr_player_walk_right; }
+        if (_action == "idle") { _already_set = !set_if_not_set(spr_player_idle_right); }
+        else if (_action == "walk") { _already_set = !set_if_not_set(spr_player_walk_right); }
+        else if (_action == "run") { _already_set = !set_if_not_set(spr_player_walk_right); }
+        else if (_action == "pickup") { _already_set = !set_if_not_set(spr_player_pickup_right); }
+        else if (_action == "setdown") { _already_set = !set_if_not_set(spr_player_setdown_right); }
+        else if (_action == "idle_carry") { _already_set = !set_if_not_set(spr_player_idle_carry_right); }
+        else if (_action == "walk_carry") { _already_set = !set_if_not_set(spr_player_walk_carry_right); }
     }
     else if (_facing == "up")
     {
-        if (_action == "idle") { obj_player.sprite_index = spr_player_idle_up; }
-        else if (_action == "walk") { obj_player.sprite_index = spr_player_walk_up; }
-        else if (_action == "run") { obj_player.sprite_index = spr_player_walk_up; }
+        if (_action == "idle") { _already_set = !set_if_not_set(spr_player_idle_up); }
+        else if (_action == "walk") { _already_set = !set_if_not_set(spr_player_walk_up); }
+        else if (_action == "run") { _already_set = !set_if_not_set(spr_player_walk_up); }
+        else if (_action == "pickup") { _already_set = !set_if_not_set(spr_player_pickup_up); }
+        else if (_action == "setdown") { _already_set = !set_if_not_set(spr_player_setdown_up); }
+        else if (_action == "idle_carry") { _already_set = !set_if_not_set(spr_player_idle_carry_up); }
+        else if (_action == "walk_carry") { _already_set = !set_if_not_set(spr_player_walk_carry_up); }
     }
     else if (_facing == "left")
     {
-        if (_action == "idle") { obj_player.sprite_index = spr_player_idle_left; }
-        else if (_action == "walk") { obj_player.sprite_index = spr_player_walk_left; }
-        else if (_action == "run") { obj_player.sprite_index = spr_player_walk_left; }
+        if (_action == "idle") { _already_set = !set_if_not_set(spr_player_idle_left); }
+        else if (_action == "walk") { _already_set = !set_if_not_set(spr_player_walk_left); }
+        else if (_action == "run") { _already_set = !set_if_not_set(spr_player_walk_left); }
+        else if (_action == "pickup") { _already_set = !set_if_not_set(spr_player_pickup_left); }
+        else if (_action == "setdown") { _already_set = !set_if_not_set(spr_player_setdown_left); }
+        else if (_action == "idle_carry") { _already_set = !set_if_not_set(spr_player_idle_carry_left); }
+        else if (_action == "walk_carry") { _already_set = !set_if_not_set(spr_player_walk_carry_left); }
     }
     else if (_facing == "down")
     {
-        if (_action == "idle") { obj_player.sprite_index = spr_player_idle_down; }
-        else if (_action == "walk") { obj_player.sprite_index = spr_player_walk_down; }
-        else if (_action == "run") { obj_player.sprite_index = spr_player_walk_down; }
+        if (_action == "idle") { _already_set = !set_if_not_set(spr_player_idle_down); }
+        else if (_action == "walk") { _already_set = !set_if_not_set(spr_player_walk_down); }
+        else if (_action == "run") { _already_set = !set_if_not_set(spr_player_walk_down); }
+        else if (_action == "pickup") { _already_set = !set_if_not_set(spr_player_pickup_down); }
+        else if (_action == "setdown") { _already_set = !set_if_not_set(spr_player_setdown_down); }
+        else if (_action == "idle_carry") { _already_set = !set_if_not_set(spr_player_idle_carry_down); }
+        else if (_action == "walk_carry") { _already_set = !set_if_not_set(spr_player_walk_carry_down); }
+    }
+    
+    if (!_already_set)
+    {
+        image_index = 0;
     }
     
     update_animation_speed(_action);
+}
+
+function set_if_not_set(_spr)
+{
+    if (sprite_index != _spr)
+    {
+        sprite_index = _spr;
+        return true;
+    }
+    else {
+    	return false;
+    }
 }
 
 function get_direction(_angle)
@@ -36,19 +72,19 @@ function get_direction(_angle)
     }
     else if (_angle <= 45 || _angle > 315)
     {
-        return "right"
+        return "right";
     }
     else if (_angle > 45 && _angle <= 135)
     {
-        return "up"
+        return "up";
     }
     else if (_angle > 135 && _angle <= 225)
     {
-        return "left"
+        return "left";
     }
     else if (_angle > 225 && _angle <= 315)
     {
-        return "down"
+        return "down";
     }
 }
 

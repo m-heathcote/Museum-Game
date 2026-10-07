@@ -24,7 +24,8 @@ anim_control_y = y;
 anim_target_x = 0;
 anim_target_y = 0;
 
-anim_duration = 30;
+pickup_anim_duration = 35;
+setdown_anim_duration = 28;
 
 function start_pickup(_player)
 {
@@ -32,7 +33,7 @@ function start_pickup(_player)
     anim_type = "pickup";
     anim_progress = 0;
     
-    _player.anim_active = true;
+    _player.obj_anim_active = true;
 
     anim_start_x = x;
     anim_start_y = y;
@@ -41,7 +42,7 @@ function start_pickup(_player)
     anim_target_y = _player.y + _player.held_obj_y_offset;
 
     // Make the object arc
-    var _arc_size = 30;
+    var _arc_size = 22;
     anim_control_x = (anim_start_x + anim_target_x) / 2;
     anim_control_y = min(anim_start_y, anim_target_y) - _arc_size;
 }
@@ -50,7 +51,13 @@ function pick_up()
 {
     if (player.held_obj == noone)
     {
+        // Player pickup animation
+        player.play_anim("pickup");
+        
+        player.held_obj = id;
+        
         audio_play_sound(snd_pick_up, 0, false);
+        
         start_pickup(player);
     }
 }
@@ -60,12 +67,10 @@ function set_as_held(_player)
     anim_active = false;
     held = true;
     
-    _player.anim_active = false;
+    _player.obj_anim_active = false;
     
     x = player.x + player.held_obj_x_offset;
     y = player.y + player.held_obj_y_offset;
-    
-    _player.held_obj = id;
 }
 
 function start_setdown(_player)
@@ -74,7 +79,7 @@ function start_setdown(_player)
     anim_type = "setdown";
     anim_progress = 0;
     
-    _player.anim_active = true;
+    _player.obj_anim_active = true;
     
     anim_start_x = x;
     anim_start_y = y;
@@ -92,7 +97,11 @@ function set_down()
 {
     if (player.held_obj == id)
     {
+        // Player setdown animation
+        player.play_anim("setdown");
+        
         audio_play_sound(snd_set_down, 0, false);
+        
         start_setdown(player);
     }
 }
@@ -110,7 +119,7 @@ function set_not_held(_player)
         ignore_player_collision = true;
     }
     
-    _player.anim_active = false;
+    _player.obj_anim_active = false;
     _player.held_obj = noone;
 }
 

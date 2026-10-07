@@ -1,6 +1,6 @@
 function get_input()
 {
-    if (anim_active)
+    if (obj_anim_active || player_anim_active)
     {
         input_x = 0;
         input_y = 0;
@@ -13,7 +13,14 @@ function get_input()
     var _down  = keyboard_check(ord("S")) || keyboard_check(vk_down);
     var _up    = keyboard_check(ord("W")) || keyboard_check(vk_up);
     
-    is_running = keyboard_check(vk_shift);
+    if (held_obj == noone)
+    {
+        is_running = keyboard_check(vk_shift);
+    }
+    else
+    {
+    	is_running = false;
+    }
     
     input_x = _right - _left;
     input_y = _down - _up;
@@ -69,20 +76,36 @@ function move_player()
 
 function update_animation()
 {
+    if (player_anim_active)
+    {
+        return;
+    }
+    
     //if (input_x != 0 || input_y != 0)
     if (hsp != 0 or vsp != 0)
     {
         //facing = point_direction(0, 0, input_x, input_y);
         facing = point_direction(0, 0, hsp, vsp);
         
-        if (is_running)
+        if (held_obj != noone)
+        {
+            set_player_sprite(get_direction(facing), "walk_carry");
+        }
+        else if (is_running)
             set_player_sprite(get_direction(facing), "run");
         else
             set_player_sprite(get_direction(facing), "walk");
     }
     else
     {
-        set_player_sprite(get_direction(facing), "idle");
+        if (held_obj != noone)
+        {
+            set_player_sprite(get_direction(facing), "idle_carry");
+        }
+        else
+        {
+        	set_player_sprite(get_direction(facing), "idle");
+        }
     }
 }
 

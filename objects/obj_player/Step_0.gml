@@ -17,7 +17,8 @@ update_animation();
 // update place_obj_x and place_obj_y
 update_place_position();
 
-if (held_obj != noone && keyboard_check_pressed(interact_key))
+if (held_obj != noone && !obj_anim_active && !player_anim_active && keyboard_check_pressed(interact_key))
 {
+    // Place object
     held_obj.set_down();
 }

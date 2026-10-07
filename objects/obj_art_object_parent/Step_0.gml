@@ -21,14 +21,16 @@ if (anim_active)
     {
         anim_target_x = player.x + player.held_obj_x_offset;
         anim_target_y = player.y + player.held_obj_y_offset;
+        
+        anim_progress += 1 / pickup_anim_duration;
     }
     if (anim_type == "setdown")
     {
         anim_target_x = player.place_obj_x;
         anim_target_y = player.place_obj_y;
+        
+        anim_progress += 1 / setdown_anim_duration;
     }
-    
-    anim_progress += 1 / anim_duration;
 
     var _t = clamp(anim_progress, 0, 1);
 

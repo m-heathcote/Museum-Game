@@ -30,14 +30,16 @@
   "height":32,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"786fb6cd-8803-426f-a4b2-e007dd48c51f","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"786fb6cd-8803-426f-a4b2-e007dd48c51f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"4636a3c8-0b74-4f65-922f-c5974c284272","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4636a3c8-0b74-4f65-922f-c5974c284272","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c9230e9d-bb32-4a08-9138-dd0fdeab96f5","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"c9230e9d-bb32-4a08-9138-dd0fdeab96f5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_player_walk_down",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"walk",
+    "path":"folders/Sprites/Player/walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
