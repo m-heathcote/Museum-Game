@@ -1,7 +1,10 @@
 // Update Vars                      ****************** TODO: improve to only set when needed?
+/*
 blocks_player = !at_home;
 interactable = !at_home && !held && !anim_active;
 has_shadow = !held && !anim_active;
+ * */
+//update_vars();
 
 bonus_outline_condition = at_home && art_home.player_in_range;
 
@@ -62,6 +65,8 @@ if (anim_active)
             set_not_held();
         else if (anim_type == "put_home")
             set_at_home();
+        
+        update_vars();
     }
 }
 

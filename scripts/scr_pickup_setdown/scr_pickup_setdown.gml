@@ -11,6 +11,7 @@ function pick_up_object()
         
         // Assign to player
         player.held_obj = id;
+        held = true;
         
         // Play sound
         audio_play_sound(snd_pick_up, 0, false);
@@ -38,8 +39,6 @@ function pick_up_object()
 function set_as_held()
 {
     anim_active = false;
-    held = true;
-    
     player.obj_anim_active = false;
     
     x = player.x + player.held_obj_x_offset;

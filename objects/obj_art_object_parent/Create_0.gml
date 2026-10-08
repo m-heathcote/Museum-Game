@@ -7,6 +7,7 @@ interactable = true;
 
 art_home = noone;
 at_home = true;
+has_shadow_at_home = true;
 held = false;
 
 anim_active = false;
@@ -25,18 +26,46 @@ anim_target_y = 0;
 pickup_anim_duration = 35;
 setdown_anim_duration = 28;
 
+function update_vars()
+{
+    blocks_player = !at_home && !held;
+    interactable = !at_home && !held && !anim_active;
+    has_shadow = !at_home && !held && !anim_active;
+    if (has_shadow_at_home && at_home)
+    {
+        has_shadow = true;
+    }
+    
+    show_debug_message("updated vars:");
+    show_debug_message("   at_home = " + string(at_home));
+    show_debug_message("   held = " + string(held));
+    show_debug_message("   blocks_player = " + string(blocks_player));
+    show_debug_message("   interactable = " + string(interactable));
+    show_debug_message("   has_shadow = " + string(has_shadow));
+}
+
 function check_place_collisions(_x, _y) { return check_object_place_collisions(_x, _y); }
 
-function pick_up() { pick_up_object(); }
+function pick_up() { 
+    pick_up_object();
+    update_vars();
+}
 
-function set_down() { set_down_object(); }
+function set_down() {
+    set_down_object();
+    update_vars();
+}
 
-function put_back_home() { put_object_back_home(); }
+function put_back_home() {
+    put_object_back_home();
+    update_vars();
+}
 
 function grab_from_home()
 {
     pick_up_object();
     at_home = false;
+    update_vars();
 }
 
 interact_func = pick_up;
