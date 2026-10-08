@@ -13,7 +13,7 @@ function update_place_position()
     var _y_offset = 0;
     
     var _min_distance = 0;
-    var _max_distance = 30;
+    var _max_distance = 32;
     var _step_distance = 2;
     
     if (_facing_text == "left" || _facing_text == "right")

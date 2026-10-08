@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_statue_pedestal",
+  "%Name":"obj_pedestal_knight",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_statue_pedestal",
+  "name":"obj_pedestal_knight",
   "overriddenProperties":[],
   "parent":{
-    "name":"On Display",
-    "path":"folders/Objects/On Display.yy",
+    "name":"Statues",
+    "path":"folders/Objects/On Display/Statues.yy",
   },
   "parentObjectId":{
     "name":"obj_art_home_parent",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_statue_pedestal",
-    "path":"sprites/spr_statue_pedestal/spr_statue_pedestal.yy",
+    "name":"spr_pedestal_knight",
+    "path":"sprites/spr_pedestal_knight/spr_pedestal_knight.yy",
   },
   "spriteMaskId":null,
   "visible":true,
