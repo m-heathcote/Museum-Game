@@ -1,3 +1,5 @@
+show_collision_mask = false; // ** debug **
+
 interactable = false;
 
 interact_key = ord("E");
@@ -6,10 +8,10 @@ player_in_range = false;    // if close enough to player to interact with
 
 outline_enabled = true;     // if an outline should be shown when in range
 showing_outline = false;    // if currently displaying a white outline
+bonus_outline_condition = false;
 
+blocks_player = true;
 ignore_player_collision = false;
-
-show_collision_mask_corners = false;  // for debugging
 
 function test_interact()
 {

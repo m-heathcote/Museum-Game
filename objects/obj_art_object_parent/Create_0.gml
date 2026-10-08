@@ -1,8 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-show_collision_mask_corners = false; // ** debug **
-
 player = instance_find(obj_player, 0);
 
 interactable = true;

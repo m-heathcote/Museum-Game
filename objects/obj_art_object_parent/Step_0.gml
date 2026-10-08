@@ -1,7 +1,9 @@
 // Update Vars                      ****************** TODO: improve to only set when needed?
 blocks_player = !at_home;
-interactable = !at_home && !held;
-has_shadow = !at_home && !held && !anim_active;
+interactable = !at_home && !held && !anim_active;
+has_shadow = !held && !anim_active;
+
+bonus_outline_condition = at_home && art_home.player_in_range;
 
 if (ignore_player_collision)
 {

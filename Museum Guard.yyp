@@ -109,6 +109,7 @@
     {"id":{"name":"spr_player_walk_up","path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},},
     {"id":{"name":"spr_shadow_bigger","path":"sprites/spr_shadow_bigger/spr_shadow_bigger.yy",},},
     {"id":{"name":"spr_shadow_player","path":"sprites/spr_shadow_player/spr_shadow_player.yy",},},
+    {"id":{"name":"spr_statue_angel","path":"sprites/spr_statue_angel/spr_statue_angel.yy",},},
     {"id":{"name":"spr_statue_display","path":"sprites/spr_statue_display/spr_statue_display.yy",},},
     {"id":{"name":"spr_statue_knight_shading","path":"sprites/spr_statue_knight_shading/spr_statue_knight_shading.yy",},},
     {"id":{"name":"spr_statue_knight","path":"sprites/spr_statue_knight/spr_statue_knight.yy",},},

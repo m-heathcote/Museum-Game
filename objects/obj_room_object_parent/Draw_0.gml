@@ -5,12 +5,12 @@ if (has_shadow)
 
 if (showing_outline && outline_enabled)
 {
-    draw_sprite_outline(sprite_index, 1.1, 0.4, image_xscale, image_yscale, image_angle);
+    draw_sprite_outline(sprite_index, 1, 0.35, image_xscale, image_yscale, image_angle);
 }
 
 draw_self();
 
-if (show_collision_mask_corners)
+if (show_collision_mask)
 {
     draw_rectangle_colour(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_blue, c_green, c_aqua, true);
     draw_point_colour(bbox_left, bbox_top, c_red);

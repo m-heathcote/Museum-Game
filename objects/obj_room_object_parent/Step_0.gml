@@ -9,6 +9,10 @@ if (interactable && player_in_range)
         interact_func();
     }
 }
+else if (bonus_outline_condition)
+{
+    showing_outline = true;
+}
 else
 {
     showing_outline = false;
