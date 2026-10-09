@@ -35,13 +35,6 @@ function update_vars()
     {
         has_shadow = true;
     }
-    
-    show_debug_message("updated vars:");
-    show_debug_message("   at_home = " + string(at_home));
-    show_debug_message("   held = " + string(held));
-    show_debug_message("   blocks_player = " + string(blocks_player));
-    show_debug_message("   interactable = " + string(interactable));
-    show_debug_message("   has_shadow = " + string(has_shadow));
 }
 
 function check_place_collisions(_x, _y) { return check_object_place_collisions(_x, _y); }

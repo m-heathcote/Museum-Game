@@ -13,6 +13,7 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"16b9be2d-eb43-442f-a0b7-759116adbeca","name":"16b9be2d-eb43-442f-a0b7-759116adbeca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7e096657-a919-48ec-94c6-524cd723ccad","name":"7e096657-a919-48ec-94c6-524cd723ccad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"484154ca-3d9e-4d69-be1f-fde45542143d","name":"484154ca-3d9e-4d69-be1f-fde45542143d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -33,7 +34,7 @@
   ],
   "name":"spr_painting_scream",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Paintings",
     "path":"folders/Sprites/On Display/Paintings.yy",
@@ -59,7 +60,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -82,14 +83,17 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16b9be2d-eb43-442f-a0b7-759116adbeca","path":"sprites/spr_painting_scream/spr_painting_scream.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d27d5563-0b9a-4a1b-abda-51bb2ae38526","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7e096657-a919-48ec-94c6-524cd723ccad","path":"sprites/spr_painting_scream/spr_painting_scream.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3637f9fc-ba81-4c03-920e-4794ed260a76","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"484154ca-3d9e-4d69-be1f-fde45542143d","path":"sprites/spr_painting_scream/spr_painting_scream.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c51d70ce-4061-498e-9f0d-ae3dd782e96a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"c51d70ce-4061-498e-9f0d-ae3dd782e96a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":22,
-    "yorigin":27,
+    "xorigin":25,
+    "yorigin":49,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

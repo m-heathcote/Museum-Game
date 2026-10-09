@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_painting_gothic",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_painting_gothic",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Paintings",
     "path":"folders/Objects/On Display/Paintings.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_art_home_parent",
+    "path":"objects/obj_art_home_parent/obj_art_home_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

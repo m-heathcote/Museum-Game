@@ -13,6 +13,7 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"16b9be2d-eb43-442f-a0b7-759116adbeca","name":"16b9be2d-eb43-442f-a0b7-759116adbeca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b75a2f48-aa08-44e0-8d13-ebb7e5cfd379","name":"b75a2f48-aa08-44e0-8d13-ebb7e5cfd379","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -20,8 +21,8 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"060d3930-d715-4247-bb1a-d48d9ba3bff2","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"060d3930-d715-4247-bb1a-d48d9ba3bff2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"e8ca3abf-dc8d-4d7d-b804-d2d12c67e0c2","blendMode":0,"displayName":"Layer 6 (2)","isLocked":false,"name":"e8ca3abf-dc8d-4d7d-b804-d2d12c67e0c2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"25c9e3a7-9ed1-4b7f-9056-e60cd5d16fbd","blendMode":0,"displayName":"Layer 6","isLocked":false,"name":"25c9e3a7-9ed1-4b7f-9056-e60cd5d16fbd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e8ca3abf-dc8d-4d7d-b804-d2d12c67e0c2","blendMode":0,"displayName":"Layer 6 (2)","isLocked":false,"name":"e8ca3abf-dc8d-4d7d-b804-d2d12c67e0c2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"2be8f9ea-c7bc-4780-9a61-703c84713406","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"2be8f9ea-c7bc-4780-9a61-703c84713406","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"f29b2ea1-eb61-4a12-8b23-1be1fcd7b0c9","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"f29b2ea1-eb61-4a12-8b23-1be1fcd7b0c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"1ce3f177-caed-4982-9224-40d6246a08d7","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"1ce3f177-caed-4982-9224-40d6246a08d7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -31,7 +32,7 @@
   ],
   "name":"spr_painting_gothic",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Paintings",
     "path":"folders/Sprites/On Display/Paintings.yy",
@@ -57,7 +58,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,12 +80,15 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16b9be2d-eb43-442f-a0b7-759116adbeca","path":"sprites/spr_painting_gothic/spr_painting_gothic.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d27d5563-0b9a-4a1b-abda-51bb2ae38526","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b75a2f48-aa08-44e0-8d13-ebb7e5cfd379","path":"sprites/spr_painting_gothic/spr_painting_gothic.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"63c650f2-f01e-4be8-be6b-0335c5129c15","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":22,
-    "yorigin":27,
+    "yorigin":49,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -1,0 +1,43 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_character_pearl",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_character_pearl",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
+  ],
+  "parent":{
+    "name":"Paintings",
+    "path":"folders/Objects/On Display/Paintings.yy",
+  },
+  "parentObjectId":{
+    "name":"obj_art_object_parent",
+    "path":"objects/obj_art_object_parent/obj_art_object_parent.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_character_pearl",
+    "path":"sprites/spr_character_pearl/spr_character_pearl.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}

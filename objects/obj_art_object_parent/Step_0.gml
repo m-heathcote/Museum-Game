@@ -1,11 +1,4 @@
-// Update Vars                      ****************** TODO: improve to only set when needed?
-/*
-blocks_player = !at_home;
-interactable = !at_home && !held && !anim_active;
-has_shadow = !held && !anim_active;
- * */
-//update_vars();
-
+// Highlight if at home and player in range of home at home
 bonus_outline_condition = at_home && art_home.player_in_range;
 
 if (ignore_player_collision)
