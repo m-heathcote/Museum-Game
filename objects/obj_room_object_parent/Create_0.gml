@@ -13,6 +13,8 @@ bonus_outline_condition = false;
 blocks_player = true;
 ignore_player_collision = false;
 
+alt_shadow_y = -1;
+
 function test_interact()
 {
     show_debug_message("interact!");

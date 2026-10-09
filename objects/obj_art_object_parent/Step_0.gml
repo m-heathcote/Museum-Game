@@ -1,3 +1,6 @@
+// Inherit the parent event
+event_inherited();
+
 // Highlight if at home and player in range of home at home
 bonus_outline_condition = at_home && art_home.player_in_range;
 
@@ -9,8 +12,15 @@ if (ignore_player_collision)
     }
 }
 
-// Inherit the parent event
-event_inherited();
+// *************************
+var _rand = random(10);
+if (!at_home && !move_cooldown_active && _rand < 5)
+{
+    var _started_move = try_to_move_a_step();
+    show_debug_message("started move (" + string(sprite_index) + ") = " + string(_started_move));
+    update_vars();
+}
+// *************************
 
 if (anim_active)
 {
@@ -35,6 +45,12 @@ if (anim_active)
         
         anim_progress += 1 / setdown_anim_duration;
     }
+    else if (anim_type == "move")
+    {
+        // no need to update target x,y
+        
+        anim_progress += 1 / move_anim_duration;
+    }
 
     var _t = clamp(anim_progress, 0, 1);
 
@@ -58,6 +74,8 @@ if (anim_active)
             set_not_held();
         else if (anim_type == "put_home")
             set_at_home();
+        else if (anim_type == "move")
+            end_move();
         
         update_vars();
     }
