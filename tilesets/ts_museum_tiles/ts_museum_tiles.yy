@@ -1,15 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_tiles",
-  "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[6,0,0,4,0,17,0,2,0,0,16,3,5,14,15,0,],},
-  ],
+  "%Name":"ts_museum_tiles",
+  "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_tiles",
+  "name":"ts_museum_tiles",
   "out_columns":12,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -20,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tileset",
-    "path":"sprites/spr_tileset/spr_tileset.yy",
+    "name":"spr_museum_tileset",
+    "path":"sprites/spr_museum_tileset/spr_museum_tileset.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

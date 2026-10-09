@@ -2,3 +2,4 @@
 event_inherited();
 
 art_object = instance_find(obj_character_pearl, 0);
+interact_distance = 28;

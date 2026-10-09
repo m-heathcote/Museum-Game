@@ -6,7 +6,10 @@
   ],
   "managed":true,
   "name":"obj_pedestal_angel",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"has_shadow","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_num","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Statues",
     "path":"folders/Objects/On Display/Statues.yy",

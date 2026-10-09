@@ -1,4 +1,4 @@
-draw_shadow(0, 9);
+draw_shadow(0, 9, 0.9);
 
 draw_self();
 
