@@ -19,6 +19,7 @@
   "height":40,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"8facc553-d307-4fdc-9583-f8d4d4739901","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"8facc553-d307-4fdc-9583-f8d4d4739901","opacity":65.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"321f4e19-3158-4b40-881f-aa8d22f7c584","blendMode":0,"displayName":"default","isLocked":false,"name":"321f4e19-3158-4b40-881f-aa8d22f7c584","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_pedestal_archer",

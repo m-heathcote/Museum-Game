@@ -8,8 +8,7 @@
   "name":"obj_statue_archer",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.2",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_y_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.3",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_y_offset","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_y_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.4",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_offset","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
