@@ -19,6 +19,7 @@ home_room = "";
 
 at_home = true;
 held = false;
+is_living = false;
 
 anim_active = false;
 anim_type = "";
@@ -92,6 +93,13 @@ function grab_from_home()
     pick_up_object();
     at_home = false;
     reset_move_coords();
+    update_vars();
+}
+
+function jump_from_home()
+{
+    object_jump_from_home();
+    at_home = false;
     update_vars();
 }
 

@@ -1,3 +1,15 @@
+function set_start_move_target()
+{
+    move_x_multiplier = 1;
+    move_y_multiplier = 1;
+    
+    step_count_x = 0;
+    step_count_y = 3;
+    
+    move_target_x = x + (step_count_x * step_size * move_x_multiplier);
+    move_target_y = y + (step_count_y * step_size * move_y_multiplier);
+}
+
 function pick_move_target()
 {
     move_x_multiplier = get_x_multiplier();
