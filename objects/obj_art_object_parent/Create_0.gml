@@ -13,6 +13,7 @@ interactable = true;
 
 art_home = noone;
 has_shadow_at_home = true;
+home_room = "";
 
 // --- STATE ---
 
@@ -47,7 +48,7 @@ step_size = 10;
 target_range = 25; // how many steps away
 move_frequency = 70; // percentage
 
-move_cooldown_min = 5;
+move_cooldown_min = 2;
 move_cooldown_max = 80;
 move_cooldown_active = false;
 

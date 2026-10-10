@@ -50,6 +50,9 @@ function end_move()
 {
     anim_active = false;
     var _cooldown = irandom_range(move_cooldown_min, move_cooldown_max);
+    
+    show_debug_message("--- started cooldown : " + string(_cooldown));
+    
     alarm[0] = _cooldown;
     move_cooldown_active = true;
     
