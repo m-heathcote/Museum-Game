@@ -14,10 +14,42 @@ if (ignore_player_collision)
 
 // *************************
 var _rand = random(10);
-if (!at_home && !move_cooldown_active && _rand < 5)
+if (!at_home && !held && !anim_active && !move_cooldown_active && _rand >= 4){
+    show_debug_message(" - - - - - RAND >= 4");
+}
+if (!at_home && !held && !anim_active && !move_cooldown_active && _rand < 4)
 {
+    if (move_target_x == -1 || move_target_y == -1)
+    {
+        pick_move_target();
+    }
+    
+    
+    var _found_step = pick_step_coords();
+    
+    if ((x == move_target_x && y == move_target_y) || !_found_step)
+    {
+        
+        // ***************************
+        if (x == move_target_x && y == move_target_y)
+        {
+            show_debug_message("AT TARGET (resetting) ......");
+        }
+        else if (!_found_step)
+        {
+            show_debug_message("could not find step ......");
+        }
+        // ***************************
+        
+        
+        
+        
+        pick_move_target();
+        pick_step_coords();
+    }
+    
     var _started_move = try_to_move_a_step();
-    show_debug_message("started move (" + string(sprite_index) + ") = " + string(_started_move));
+    
     update_vars();
 }
 // *************************

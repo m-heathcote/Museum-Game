@@ -1,3 +1,4 @@
+// called from art_object
 function check_object_place_collisions(_x, _y)
 {
     // Check for overlapping room objects
