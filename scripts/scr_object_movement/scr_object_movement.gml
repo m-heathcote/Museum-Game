@@ -8,16 +8,23 @@ function maybe_move_art_object()
             pick_move_target();
         }
         
+        var _loop_count = 0;
+        var _max_tries = 4;
+        
         var _found_step = pick_step_coords();
         
-        while ((x == move_target_x && y == move_target_y) || !_found_step)
+        while (((x == move_target_x && y == move_target_y) || !_found_step) && _loop_count < _max_tries)
         {
             pick_move_target();
             _found_step = pick_step_coords();
+            _loop_count += 1;
         }
         
-        try_to_move_a_step();
-        update_vars();
+        if (_found_step)
+        {
+            object_move_a_step();
+            update_vars();
+        }
     }
 }
 
@@ -49,10 +56,8 @@ function object_move_a_step()
 function end_move()
 {
     anim_active = false;
+    
     var _cooldown = irandom_range(move_cooldown_min, move_cooldown_max);
-    
-    show_debug_message("--- started cooldown : " + string(_cooldown));
-    
     alarm[0] = _cooldown;
     move_cooldown_active = true;
     

@@ -2,8 +2,6 @@ function pick_move_target()
 {
     move_x_multiplier = get_x_multiplier();
     move_y_multiplier = get_y_multiplier();
-    //move_x_multiplier = choose(1, -1);
-    //move_y_multiplier = choose(1, -1);
     
     step_count_x = floor(random_range(1, target_range));
     step_count_y = floor(random_range(1, target_range));

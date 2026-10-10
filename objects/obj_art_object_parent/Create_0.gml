@@ -28,7 +28,7 @@ anim_progress = 0;
 
 pickup_anim_duration = 34;
 setdown_anim_duration = 27;
-move_anim_duration = 25;
+move_anim_duration = 20;
 
 // --- ANIM MEMORY ---
 
@@ -44,12 +44,12 @@ anim_target_y = 0;
 
 // --- MOVE SETTINGS ---
 
-step_size = 10;
-target_range = 25; // how many steps away
-move_frequency = 70; // percentage
+step_size = 15;
+target_range = 15; // how many steps away
+move_frequency = 50; // percentage
 
-move_cooldown_min = 2;
-move_cooldown_max = 80;
+move_cooldown_min = 6;
+move_cooldown_max = 85;
 move_cooldown_active = false;
 
 // --- MOVE MEMORY ---
@@ -96,11 +96,3 @@ function grab_from_home()
 }
 
 interact_func = pick_up;
-
-function try_to_move_a_step()
-{
-    if (!at_home && !held && !anim_active && !move_cooldown_active)
-    {
-        object_move_a_step();
-    }
-}
