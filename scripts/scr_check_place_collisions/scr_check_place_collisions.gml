@@ -1,21 +1,6 @@
 // called from art_object
 function check_object_place_collisions(_x, _y)
 {
-    // Check for overlapping room objects
-    var _inst = instance_place(
-        _x,
-        _y,
-        obj_room_object_parent
-    );
-
-    if (_inst != noone && _inst != id)
-    {
-        if (_inst.blocks_player)
-        {
-            return true;
-        }
-    }
-    
     // Get proposed offset
     var _x_diff = _x - x;
     var _y_diff = _y - y;
@@ -24,6 +9,34 @@ function check_object_place_collisions(_x, _y)
     var _right = bbox_right + _x_diff;
     var _top = bbox_top + _y_diff;
     var _bottom = bbox_bottom + _y_diff;
+    
+    
+    // Get list of room objects in the proposed position
+    var _list = ds_list_create();
+    var _list_len = collision_rectangle_list(
+        _left,
+        _top,
+        _right,
+        _bottom,
+        obj_room_object_parent,
+        false,
+        true, // calling inst excluded
+        _list,
+        false
+    );
+    
+    for (var _i = 0; _i < _list_len; _i++)
+    {
+        var _inst = _list[| _i];
+
+        if (_inst.blocks_player)
+        {
+            ds_list_destroy(_list);
+            return true;
+        }
+    }
+
+    ds_list_destroy(_list);
     
     // Check for tile collisions
     var _middle = tilemap_get_at_pixel(obj_game_manager.tiles_col, _x, _y);
