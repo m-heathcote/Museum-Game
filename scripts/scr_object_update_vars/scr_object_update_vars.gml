@@ -1,8 +1,8 @@
 function update_vars()
 {
     is_living = !at_home && !held;
-    blocks_player = is_living;
-    interactable = !at_home && !held && !anim_active;
+    blocks_player = !at_home && !held;
+    interactable = !at_home && !held;
     
     has_shadow = !at_home && !held && !anim_active;
     if (has_shadow_at_home && at_home)

@@ -13,5 +13,5 @@ if (_message == "footstep" && !global.paused)
 	// Choose a random sound to play on footstep
 	var _sound = choose(snd_step_1, snd_step_2, snd_step_3);
     var _pitch = random_range(0.8, 1.1);
-	audio_play_sound(_sound, 0, 0, 1, 0, _pitch);
+	audio_play_sound(_sound, 0, false, 0.35, 0, _pitch);
 }

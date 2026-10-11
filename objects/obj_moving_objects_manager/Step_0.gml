@@ -12,8 +12,6 @@ if (!try_jump_out_cooldown_active && !jump_out_cooldown_active && _num_living < 
         var _i = irandom(_num_dormant - 1);
         var _art = dormant_art[_i];
         
-        show_debug_message("   picked: " + string(_art.sprite_index));
-        
         if (!_art.jump_out_cooldown_active)
         {
             var _success = _art.jump_from_home();

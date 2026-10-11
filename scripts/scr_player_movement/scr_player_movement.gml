@@ -66,11 +66,19 @@ function update_speed()
 
 function move_player()
 {
+    // Move horizontally
     if (!check_object_collisions(hsp, 0))
         move_and_collide(hsp, 0, obj_game_manager.tiles_col);
 
+    // Move vertically
     if (!check_object_collisions(0, vsp))
         move_and_collide(0, vsp, obj_game_manager.tiles_col);
+    
+    // Update audio pos
+    if(hsp != 0 || vsp != 0)
+    {
+        audio_listener_position(x, y, 0);
+    }
 }
 
 

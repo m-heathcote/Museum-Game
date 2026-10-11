@@ -1,4 +1,19 @@
+// --- DEBUG ---
+
 show_placement_location = false; // ** debug **
+
+// --- CONTROLS ---
+
+interact_key = ord("E");
+
+// --- STATE ---
+
+facing = point_direction(0, 0, 0, 1);
+
+obj_anim_active = false;
+player_anim_active = false;
+
+// --- SPEED / MOVEMENT SETTINGS ---
 
 move_speed = 1.85;  // 1.85
 run_speed = 3.3;    // 3.3
@@ -14,26 +29,32 @@ acceleration = 0.24;    // 0.24
 run_acceleration = 0.1; // 0.1
 deceleration = 0.5;     // 0.5
 
+// --- MOVEMENT MEMORY ---
+
 input_x = 0;
 input_y = 0;
 
 hsp = 0;
 vsp = 0;
 
-facing = point_direction(0, 0, 0, 1);
+// --- HELD OBJ ---
 
+held_obj = noone;
 held_obj_x_offset = 0;
 held_obj_y_offset = -19;
+
+// --- SAVED COORDS ---
 
 place_obj_y_offset = 9;
 place_obj_x = x;
 place_obj_y = y + place_obj_y_offset;
 
-interact_key = ord("E");
-held_obj = noone;
+// --- SET AUDIO POSITION ---
 
-obj_anim_active = false;
-player_anim_active = false;
+audio_listener_orientation(0, 0, 1, 0, -1, 0)
+audio_listener_position(x, y, 0);
+
+// --- FUNCTIONS ---
 
 function is_overlapping_object(_object)
 {

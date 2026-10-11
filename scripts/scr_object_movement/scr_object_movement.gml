@@ -31,7 +31,11 @@ function maybe_move_art_object()
 function object_move_a_step()
 {
     // Play sound
-    audio_play_sound(snd_art_move, 0, false);
+    //audio_play_sound(snd_art_move, 0, false);
+    move_snd = snd_art_move;
+    snd_falloff_ref = 32;
+    snd_falloff_max = 200;
+    audio_play_sound_at(move_snd, x, y, 0, snd_falloff_ref, snd_falloff_max, 1, false, 0);
     
     // Start move
     anim_active = true;
