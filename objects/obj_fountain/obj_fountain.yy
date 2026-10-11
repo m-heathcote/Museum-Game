@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fountain_2",
-    "path":"sprites/spr_fountain_2/spr_fountain_2.yy",
+    "name":"spr_fountain",
+    "path":"sprites/spr_fountain/spr_fountain.yy",
   },
   "spriteMaskId":null,
   "visible":true,

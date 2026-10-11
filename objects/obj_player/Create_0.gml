@@ -1,6 +1,6 @@
 // --- DEBUG ---
 
-show_placement_location = true; // ** debug **
+show_placement_location = false; // ** debug **
 
 // --- CONTROLS ---
 

@@ -3,7 +3,7 @@ event_inherited();
 
 // --- DEBUG ---
 
-show_step_targets = true; // *** debug ***
+show_step_targets = false; // *** debug ***
 
 // --- ABOUT ---
 
