@@ -1,4 +1,4 @@
-show_collision_mask = false; // ** debug **
+show_collision_mask = true; // ** debug **
 
 interactable = false;
 

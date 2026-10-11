@@ -42,7 +42,36 @@ function update_place_position()
         }
     }
     
-    // Nothing was available
-    place_obj_x = x;
-    place_obj_y = y + place_obj_y_offset;
+    // Nothing was available -> place at player pos
+    if (!held_obj.check_place_collisions(x, y + place_obj_y_offset))
+    {
+        place_obj_x = x;
+        place_obj_y = y + place_obj_y_offset;
+        return;
+    }
+    
+    // If player pos invalid -> check other directions
+    var _furthest_allowed_dist = 90;
+    var _new_facing = (facing + 90) mod 360;
+    
+    // Loop through 3 other directions
+    for (var _i = 0; _i < 3; _i++)
+    {
+        // from player to furthest pos
+        for (var _distance = 0; _distance <= _furthest_allowed_dist; _distance += _step_distance)
+        {
+            var _check_x = x + lengthdir_x(_distance, _new_facing);
+            var _check_y = y + lengthdir_y(_distance, _new_facing) + _y_offset;
+            
+            if (!held_obj.check_place_collisions(_check_x, _check_y))
+            {
+                place_obj_x = _check_x;
+                place_obj_y = _check_y;
+                return;
+            }
+        }
+        _new_facing = (_new_facing + 90) mod 360;
+    }
+    
+    // If nothing works -> use last valid pos
 }

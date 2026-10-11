@@ -48,6 +48,8 @@ held_obj_y_offset = -19;
 place_obj_y_offset = 9;
 place_obj_x = x;
 place_obj_y = y + place_obj_y_offset;
+last_valid_place_obj_x = x;
+last_valid_place_obj_y = y;
 
 // --- SET AUDIO POSITION ---
 
