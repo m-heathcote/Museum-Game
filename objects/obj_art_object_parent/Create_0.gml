@@ -3,7 +3,7 @@ event_inherited();
 
 // --- DEBUG ---
 
-show_step_targets = true; // *** debug ***
+show_step_targets = false; // *** debug ***
 
 // --- ABOUT ---
 
@@ -98,9 +98,13 @@ function grab_from_home()
 
 function jump_from_home()
 {
-    object_jump_from_home();
-    at_home = false;
-    update_vars();
+    var _success = object_jump_from_home();
+    if (_success)
+    {
+        at_home = false;
+        update_vars();
+    }
+    return _success;
 }
 
 interact_func = pick_up;

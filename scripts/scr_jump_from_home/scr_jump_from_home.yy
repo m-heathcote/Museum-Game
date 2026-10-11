@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_art_comes_to_life",
+  "%Name":"scr_jump_from_home",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_art_comes_to_life",
+  "name":"scr_jump_from_home",
   "parent":{
     "name":"Object Movement",
     "path":"folders/Scripts/Object Movement.yy",

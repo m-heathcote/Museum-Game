@@ -27,8 +27,8 @@ show_debug_message("--- START DORMANT: " + string(dormant_art));
 
 max_living_art =  4;
 
-jump_out_cooldown_min = 120;
-jump_out_cooldown_max = 240;
+jump_out_cooldown_min = 240;
+jump_out_cooldown_max = 300;
 jump_out_cooldown_active = false;
 
 function move_from_list_to_list(_val, _old_list, _new_list)
@@ -51,11 +51,13 @@ function move_from_list_to_list(_val, _old_list, _new_list)
 
 function switch_to_dormant(_art)
 {
+    show_debug_message("          ---- SWITCHING " + string(_art.sprite_index) + " TO DORMANT");
     return move_from_list_to_list(_art, living_art, dormant_art);
 }
 
 function switch_to_living(_art)
 {
+    show_debug_message("          ++++ SWITCHING " + string(_art.sprite_index) + " TO LIVING");
     return move_from_list_to_list(_art, dormant_art, living_art);
 }
 

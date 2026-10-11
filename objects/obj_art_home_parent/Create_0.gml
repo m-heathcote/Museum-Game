@@ -2,6 +2,7 @@
 event_inherited();
 
 player = instance_find(obj_player, 0);
+moving_obj_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;
 
@@ -14,7 +15,7 @@ function return_art_object()
     {
         art_object.put_back_home();
         art_at_home = true;
-        interact_func = grab_art_object;
+        moving_obj_manager.switch_to_dormant(art_object);
     }
     else if (player.held_obj != noone)
     {
@@ -33,7 +34,7 @@ function grab_art_object()
     {
         art_object.grab_from_home();
         art_at_home = false;
-        interact_func = return_art_object;
+        moving_obj_manager.switch_to_living(art_object);
     }
     else
     {
@@ -41,4 +42,10 @@ function grab_art_object()
     }
 }
 
-interact_func = grab_art_object;
+function grab_or_return()
+{
+    if (art_at_home) { grab_art_object(); }
+    else { return_art_object(); }
+}
+
+interact_func = grab_or_return;
