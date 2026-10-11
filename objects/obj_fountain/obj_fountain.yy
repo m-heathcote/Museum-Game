@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_fountain",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_fountain",
   "overriddenProperties":[],
   "parent":{
     "name":"Decorations",
-    "path":"folders/Objects/Decorations.yy",
+    "path":"folders/Objects/Things/Decorations.yy",
   },
   "parentObjectId":{
     "name":"obj_room_object_parent",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fountain",
-    "path":"sprites/spr_fountain/spr_fountain.yy",
+    "name":"spr_fountain_2",
+    "path":"sprites/spr_fountain_2/spr_fountain_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

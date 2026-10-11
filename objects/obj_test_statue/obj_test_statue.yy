@@ -13,7 +13,7 @@
   ],
   "parent":{
     "name":"Testing",
-    "path":"folders/Objects/On Display/Testing.yy",
+    "path":"folders/Objects/Things/On Display/Testing.yy",
   },
   "parentObjectId":{
     "name":"obj_art_object_parent",

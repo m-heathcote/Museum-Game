@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"On Display",
-    "path":"folders/Objects/On Display.yy",
+    "path":"folders/Objects/Things/On Display.yy",
   },
   "parentObjectId":{
     "name":"obj_room_object_parent",

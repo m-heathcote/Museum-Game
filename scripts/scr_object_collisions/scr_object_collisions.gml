@@ -1,4 +1,4 @@
-// Checks for a collision at the position where the instance
+// Checks for an object collision at the position where the instance
 // is going to move (x + _move_x, y + _move_y)
 function check_object_collisions(_move_x, _move_y)
 {

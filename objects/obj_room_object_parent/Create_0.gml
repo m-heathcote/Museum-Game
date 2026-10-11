@@ -14,6 +14,7 @@ blocks_player = true;
 ignore_player_collision = false;
 
 alt_shadow_y = -1;
+alt_depth_y = undefined;
 
 function test_interact()
 {

@@ -12,7 +12,7 @@
   ],
   "parent":{
     "name":"Paintings",
-    "path":"folders/Objects/On Display/Paintings.yy",
+    "path":"folders/Objects/Things/On Display/Paintings.yy",
   },
   "parentObjectId":{
     "name":"obj_art_object_parent",

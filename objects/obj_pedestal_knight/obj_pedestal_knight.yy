@@ -12,7 +12,7 @@
   ],
   "parent":{
     "name":"Statues",
-    "path":"folders/Objects/On Display/Statues.yy",
+    "path":"folders/Objects/Things/On Display/Statues.yy",
   },
   "parentObjectId":{
     "name":"obj_art_home_parent",

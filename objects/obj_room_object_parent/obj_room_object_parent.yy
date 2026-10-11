@@ -11,8 +11,8 @@
   "name":"obj_room_object_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"On Display",
-    "path":"folders/Objects/On Display.yy",
+    "name":"Things",
+    "path":"folders/Objects/Things.yy",
   },
   "parentObjectId":null,
   "persistent":false,
