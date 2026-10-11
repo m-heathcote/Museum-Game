@@ -2,7 +2,7 @@
 event_inherited();
 
 // Highlight if at home and player in range of home at home
-bonus_outline_condition = at_home && art_home.player_in_range;
+bonus_outline_condition = at_home && has_highlight_at_home && art_home.player_in_range;
 
 if (ignore_player_collision)
 {

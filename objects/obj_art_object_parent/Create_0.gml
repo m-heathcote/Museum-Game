@@ -13,6 +13,7 @@ interactable = true;
 
 art_home = noone;
 has_shadow_at_home = true;
+has_highlight_at_home = true;
 home_room = "";
 
 // --- STATE ---
@@ -43,6 +44,12 @@ anim_control_y = y;
 anim_target_x = 0;
 anim_target_y = 0;
 
+// --- MAGIC SETTINGS ---
+
+jump_out_cooldown_min = 60 * 15;
+jump_out_cooldown_max = 60 * 45;
+jump_out_cooldown_active = false;
+
 // --- MOVE SETTINGS ---
 
 step_size = 15;
@@ -67,6 +74,8 @@ move_target_y = -1;
 move_step_x = -1;
 move_step_y = -1;
 
+// --- FUNCTIONS ---
+
 function check_place_collisions(_x, _y) { return check_object_place_collisions(_x, _y); }
 
 function pick_up()
@@ -86,6 +95,10 @@ function put_back_home()
 {
     put_object_back_home();
     update_vars();
+    
+    var _cooldown = irandom_range(jump_out_cooldown_min, jump_out_cooldown_max);
+    alarm[1] = _cooldown;
+    jump_out_cooldown_active = true;
 }
 
 function grab_from_home()
