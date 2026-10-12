@@ -1,12 +1,12 @@
-if (has_shadow)
+if (has_shadow && shadow_spr != noone)
 {
     if (alt_shadow_y != -1)
     {
-        draw_shadow_coords(x, alt_shadow_y, shadow_x_offset, shadow_y_offset, shadow_x_scale, shadow_y_scale, shadow_num)
+        draw_shadow_coords(shadow_spr, x, alt_shadow_y, shadow_x_offset, shadow_y_offset, shadow_x_scale, shadow_y_scale)
     }
     else
     {
-        draw_shadow(shadow_x_offset, shadow_y_offset, shadow_x_scale, shadow_y_scale, shadow_num);
+        draw_shadow(shadow_spr, shadow_x_offset, shadow_y_offset, shadow_x_scale, shadow_y_scale);
     }
 }
 

@@ -34,7 +34,9 @@
     {"$GMObjectProperty":"v2","%Name":"shadow_y_offset","filters":[],"listItems":[],"multiselect":false,"name":"shadow_y_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"shadow_x_scale","filters":[],"listItems":[],"multiselect":false,"name":"shadow_x_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"shadow_y_scale","filters":[],"listItems":[],"multiselect":false,"name":"shadow_y_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"shadow_num","filters":[],"listItems":[],"multiselect":false,"name":"shadow_num","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"shadow_spr","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"shadow_spr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_shadow_player","path":"sprites/spr_shadow_player/spr_shadow_player.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_shadow_player","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

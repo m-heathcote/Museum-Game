@@ -8,7 +8,7 @@
   "name":"obj_pedestal_angel",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"has_shadow","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_num","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_spr","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resource":{"name":"spr_shadow_pedestal","path":"sprites/spr_shadow_pedestal/spr_shadow_pedestal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shadow_pedestal",},
   ],
   "parent":{
     "name":"Statues",

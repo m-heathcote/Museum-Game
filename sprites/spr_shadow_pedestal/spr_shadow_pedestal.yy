@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Misc",
-    "path":"folders/Sprites/Misc.yy",
+    "name":"Shadows",
+    "path":"folders/Sprites/Shadows.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
