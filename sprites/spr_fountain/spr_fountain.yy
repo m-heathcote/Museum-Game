@@ -68,7 +68,7 @@
   "origin":9,
   "parent":{
     "name":"Decorations",
-    "path":"folders/Sprites/Decorations.yy",
+    "path":"folders/Sprites/Things/Decorations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

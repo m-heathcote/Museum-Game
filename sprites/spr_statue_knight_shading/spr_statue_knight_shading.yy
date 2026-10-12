@@ -30,7 +30,7 @@
   "origin":9,
   "parent":{
     "name":"Not In Use",
-    "path":"folders/Sprites/On Display/Not In Use.yy",
+    "path":"folders/Sprites/Things/On Display/Not In Use.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

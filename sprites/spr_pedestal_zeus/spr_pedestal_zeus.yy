@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"Statues",
-    "path":"folders/Sprites/On Display/Statues.yy",
+    "path":"folders/Sprites/Things/On Display/Statues.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

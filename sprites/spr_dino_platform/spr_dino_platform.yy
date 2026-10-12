@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Animals",
-    "path":"folders/Sprites/On Display/Animals.yy",
+    "name":"Dinos",
+    "path":"folders/Sprites/Things/On Display/Dinos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

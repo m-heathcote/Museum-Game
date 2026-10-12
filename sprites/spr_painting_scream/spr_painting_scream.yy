@@ -37,7 +37,7 @@
   "origin":9,
   "parent":{
     "name":"Paintings",
-    "path":"folders/Sprites/On Display/Paintings.yy",
+    "path":"folders/Sprites/Things/On Display/Paintings.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

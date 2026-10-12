@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"color refs",
-    "path":"folders/Sprites/On Display/Paintings/color refs.yy",
+    "path":"folders/Sprites/Things/On Display/Paintings/color refs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

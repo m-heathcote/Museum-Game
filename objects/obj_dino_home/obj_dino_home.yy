@@ -8,8 +8,8 @@
   "name":"obj_dino_home",
   "overriddenProperties":[],
   "parent":{
-    "name":"Animals",
-    "path":"folders/Objects/Things/On Display/Animals.yy",
+    "name":"Dinos",
+    "path":"folders/Objects/Things/On Display/Dinos.yy",
   },
   "parentObjectId":{
     "name":"obj_art_home_parent",

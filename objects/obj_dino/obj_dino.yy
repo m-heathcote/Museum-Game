@@ -14,8 +14,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_offset","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-4",},
   ],
   "parent":{
-    "name":"Animals",
-    "path":"folders/Objects/Things/On Display/Animals.yy",
+    "name":"Dinos",
+    "path":"folders/Objects/Things/On Display/Dinos.yy",
   },
   "parentObjectId":{
     "name":"obj_art_object_parent",
