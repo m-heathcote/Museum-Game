@@ -1,15 +1,26 @@
 {
   "$GMObject":"",
   "%Name":"obj_dino",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_dino",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_y_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_y_offset","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_spr","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resource":{"name":"spr_shadow_bigger","path":"sprites/spr_shadow_bigger/spr_shadow_bigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shadow_bigger",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_offset","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-4",},
+  ],
   "parent":{
     "name":"Animals",
     "path":"folders/Objects/Things/On Display/Animals.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_art_object_parent",
+    "path":"objects/obj_art_object_parent/obj_art_object_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

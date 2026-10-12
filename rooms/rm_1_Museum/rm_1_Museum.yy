@@ -31,6 +31,7 @@
     {"name":"inst_6F35B230","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},
     {"name":"inst_2D19A304","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},
     {"name":"inst_57B32915","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},
+    {"name":"inst_7D76CFAF","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},
     {"name":"inst_40D78E0E","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},
   ],
   "isDnd":false,
@@ -64,7 +65,8 @@
         {"$GMRInstance":"v4","%Name":"inst_4CA7F5DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CA7F5DC","objectId":{"name":"obj_statue_archer","path":"objects/obj_statue_archer/obj_statue_archer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1181.5,"y":669.0,},
         {"$GMRInstance":"v4","%Name":"inst_60F2A77F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60F2A77F","objectId":{"name":"obj_statue_knight","path":"objects/obj_statue_knight/obj_statue_knight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1190.5,"y":546.0,},
         {"$GMRInstance":"v4","%Name":"inst_6F35B230","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F35B230","objectId":{"name":"obj_statue_zeus","path":"objects/obj_statue_zeus/obj_statue_zeus.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":996.0,"y":540.0,},
-        {"$GMRInstance":"v4","%Name":"inst_40D78E0E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40D78E0E","objectId":{"name":"obj_dino","path":"objects/obj_dino/obj_dino.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":175.0,"y":388.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7D76CFAF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D76CFAF","objectId":{"name":"obj_dino_home","path":"objects/obj_dino_home/obj_dino_home.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":286.0,"y":516.5,},
+        {"$GMRInstance":"v4","%Name":"inst_40D78E0E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40D78E0E","objectId":{"name":"obj_dino","path":"objects/obj_dino/obj_dino.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":286.0,"y":516.5,},
       ],"layers":[],"name":"Inst_Displays","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inst_Player","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_3D3D2431_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D3D2431_1","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":690.0,"y":347.0,},
@@ -312,7 +314,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":32,"hport":774,"hspeed":-1,"hview":180,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":1376,"wview":320,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":888,"hspeed":-1,"hview":240,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":1406,"wview":380,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

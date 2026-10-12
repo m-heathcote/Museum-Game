@@ -1,3 +1,32 @@
+// ----- PUSH AHEAD -----
+
+var _dir = get_direction(player.facing);
+if (_dir == "down")
+{
+    x_push_ahead = 0;
+    y_push_ahead = push_ahead_val;
+}
+else if (_dir == "up")
+{
+    x_push_ahead = 0;
+    y_push_ahead = -push_ahead_val;
+}
+else if (_dir == "left")
+{
+    x_push_ahead = -push_ahead_val;
+    y_push_ahead = 0;
+}
+else if (_dir == "right")
+{
+    x_push_ahead = push_ahead_val;
+    y_push_ahead = 0;
+}
+else 
+{
+    x_push_ahead = 0;
+    y_push_ahead = 0;
+}
+
 // ----- ZOOM -----
 
 var _scale = 1;
@@ -10,8 +39,8 @@ var _cam_height = view_h / _scale;
 
 // ----- CAMERA TARGET -----
 
-var _x_target = following.x;
-var _y_target = following.y;
+var _x_target = following.x + x_push_ahead;
+var _y_target = following.y + y_push_ahead + camera_y_offset;
 
 // ----- CAMERA POSITION -----
 
