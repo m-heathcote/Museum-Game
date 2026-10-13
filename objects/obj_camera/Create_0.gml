@@ -12,3 +12,14 @@ camera_y_offset = -25;
 push_ahead_val = 8;
 x_push_ahead = 0;
 y_push_ahead = 0;
+
+function set_camera(_center_x, _center_y)
+{
+    // Convert center coords to top left corner
+    var _cam_x = _center_x - view_w / 2;
+    var _cam_y = _center_y - view_h / 2;
+    
+    // Apply
+    camera_set_view_size(camera, view_w, view_h);
+    camera_set_view_pos(camera, _cam_x, _cam_y + camera_y_offset);
+}

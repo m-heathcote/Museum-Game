@@ -6,8 +6,8 @@
   "name":"obj_menu_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Visuals",
+    "path":"folders/Objects/Menu/Visuals.yy",
   },
   "parentObjectId":null,
   "persistent":false,

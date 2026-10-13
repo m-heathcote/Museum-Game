@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_transition_manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_transition_manager",
+  "parent":{
+    "name":"Transitions",
+    "path":"folders/Scripts/Transitions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

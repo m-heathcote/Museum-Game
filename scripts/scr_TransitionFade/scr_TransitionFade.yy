@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_TransitionFade",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_TransitionFade",
+  "parent":{
+    "name":"Transitions",
+    "path":"folders/Scripts/Transitions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
