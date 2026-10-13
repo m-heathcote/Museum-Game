@@ -1,7 +1,9 @@
 // --- DEBUG ---
 
 show_placement_location = false; // ** debug **
-show_art_freeze_range = false;    // ** debug **
+show_art_freeze_range = false; // ** debug **
+show_origin = false; // ** debug **
+show_light_sprite = false; // ** debug **
 
 // --- CONTROLS ---
 

@@ -1,5 +1,10 @@
 draw_shadow(spr_shadow_player, 0, 9, 0.9);
 
+if (show_light_sprite)
+{
+    draw_sprite(spr_light_1, 0, x, y);
+}
+
 draw_self();
 
 if (show_placement_location)
@@ -23,4 +28,9 @@ if (show_art_freeze_range)
 {
     var _range = obj_art_object_parent.move_dist_from_player;
     draw_circle_colour(x, y, _range, c_aqua, c_aqua, true);
+}
+
+if (show_origin)
+{
+    draw_circle_colour(x, y, 1, c_red, c_red, false);
 }
