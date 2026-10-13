@@ -55,6 +55,7 @@ jump_out_cooldown_active = false;
 step_size = 15;
 target_range = 15; // how many steps away
 move_frequency = 50; // percentage
+move_dist_from_player = 92;
 
 move_cooldown_min = 6;
 move_cooldown_max = 85;

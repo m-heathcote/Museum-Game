@@ -266,11 +266,13 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_End","path":"rooms/rm_End/rm_End.yy",},},
     {"roomId":{"name":"rm_Title","path":"rooms/rm_Title/rm_Title.yy",},},
     {"roomId":{"name":"rm_1_Museum","path":"rooms/rm_1_Museum/rm_1_Museum.yy",},},
-    {"roomId":{"name":"rm_1_Museum_TEST","path":"rooms/rm_1_Museum_TEST/rm_1_Museum_TEST.yy",},},
-    {"roomId":{"name":"rm_0_TestRoom","path":"rooms/rm_0_TestRoom/rm_0_TestRoom.yy",},},
+    {"roomId":{"name":"rm_End","path":"rooms/rm_End/rm_End.yy",},},
+    {"children":[
+        {"roomId":{"name":"rm_0_TestRoom","path":"rooms/rm_0_TestRoom/rm_0_TestRoom.yy",},},
+        {"roomId":{"name":"rm_1_Museum_TEST","path":"rooms/rm_1_Museum_TEST/rm_1_Museum_TEST.yy",},},
+      ],"groupName":"Testing",},
   ],
   "templateType":"game",
   "TextureGroups":[

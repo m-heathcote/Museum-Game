@@ -15,7 +15,10 @@ if (ignore_player_collision)
 // Move independently
 if (!at_home && !held && !anim_active && !move_cooldown_active)
 {
-    maybe_move_art_object();
+    if (distance_to_object(player) > move_dist_from_player)
+    {
+        maybe_move_art_object();
+    }
 }
 
 if (anim_active)

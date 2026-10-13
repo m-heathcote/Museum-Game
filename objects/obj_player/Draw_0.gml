@@ -18,3 +18,9 @@ if (show_placement_location)
         true
     );
 }
+
+if (show_art_freeze_range)
+{
+    var _range = obj_art_object_parent.move_dist_from_player;
+    draw_circle_colour(x, y, _range, c_aqua, c_aqua, true);
+}
