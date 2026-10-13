@@ -6,7 +6,10 @@
   ],
   "managed":true,
   "name":"obj_dino_home",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"has_shadow","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_spr","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resource":{"name":"spr_shadow_dino_platform","path":"sprites/spr_shadow_dino_platform/spr_shadow_dino_platform.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shadow_dino_platform",},
+  ],
   "parent":{
     "name":"Dinos",
     "path":"folders/Objects/Things/On Display/Dinos.yy",

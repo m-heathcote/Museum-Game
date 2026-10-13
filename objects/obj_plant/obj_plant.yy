@@ -4,7 +4,11 @@
   "eventList":[],
   "managed":true,
   "name":"obj_plant",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_spr","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resource":{"name":"spr_shadow_plant","path":"sprites/spr_shadow_plant/spr_shadow_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shadow_plant",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_x_scale","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.95",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"has_shadow","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Decorations",
     "path":"folders/Objects/Things/Decorations.yy",

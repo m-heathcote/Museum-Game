@@ -4,7 +4,10 @@
   "eventList":[],
   "managed":true,
   "name":"obj_bench_vert",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"has_shadow","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_room_object_parent","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"propertyId":{"name":"shadow_spr","path":"objects/obj_room_object_parent/obj_room_object_parent.yy",},"resource":{"name":"spr_shadow_bench_vert","path":"sprites/spr_shadow_bench_vert/spr_shadow_bench_vert.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shadow_bench_vert",},
+  ],
   "parent":{
     "name":"Decorations",
     "path":"folders/Objects/Things/Decorations.yy",
