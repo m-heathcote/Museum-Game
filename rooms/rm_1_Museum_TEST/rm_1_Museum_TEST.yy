@@ -197,8 +197,8 @@
   ],
   "name":"rm_1_Museum_TEST",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Testing",
+    "path":"folders/Rooms/Testing.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
