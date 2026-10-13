@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_bench_vert",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":70,
   "bbox_left":5,
   "bbox_right":21,
-  "bbox_top":1,
+  "bbox_top":7,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

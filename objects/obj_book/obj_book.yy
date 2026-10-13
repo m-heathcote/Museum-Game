@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_book",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_book",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Desk",
     "path":"folders/Objects/Things/Decorations/Desk.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_room_object_parent",
+    "path":"objects/obj_room_object_parent/obj_room_object_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

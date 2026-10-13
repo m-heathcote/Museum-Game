@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_front_desk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":72,
   "bbox_left":3,
   "bbox_right":103,
-  "bbox_top":4,
+  "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
