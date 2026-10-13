@@ -16,9 +16,11 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":20,
+  "height":17,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"f45af8ba-3945-4e47-a456-e76a1f78ad23","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"f45af8ba-3945-4e47-a456-e76a1f78ad23","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3487a762-95b6-4f36-bb16-8d73fe965648","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"3487a762-95b6-4f36-bb16-8d73fe965648","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"31969202-0fa7-4b6a-8429-9d574b1af706","blendMode":0,"displayName":"default","isLocked":false,"name":"31969202-0fa7-4b6a-8429-9d574b1af706","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_wall_thing",
@@ -86,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":20,
+  "width":14,
 }
