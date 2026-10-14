@@ -3,9 +3,7 @@ if (room == rm_1_Museum)
     randomise();
     
     // Ensure stats reset
-    global.player_put_in_place = 0;
-    global.player_took_out_of_place = 0;
-    global.num_art_out_of_place = 0;
+    reset_stats();
     
     // Get collision layer
     tiles_col = layer_tilemap_get_id("Tiles_Col");

@@ -1,6 +1,7 @@
 var _put_in_place = global.player_put_in_place;
 var _took_out_place = global.player_took_out_of_place;
 var _num_out = global.num_art_out_of_place;
+var _cobwebs_cleaned = global.cobwebs_cleaned;
 
 //draw_self();
 
@@ -14,23 +15,26 @@ var _cx = x;
 var _cy = y;
 
 // Text lines
-var _line1 = "*Put in place: " + string(_put_in_place);
-var _line2 = "*Taken out: " + string(_took_out_place);
-var _line3 = "Returned home: " + string(_put_in_place - _took_out_place);
-var _line4 = "Out of place: " + string(_num_out);
-var _num_lines = 4;
+var _text_lines = [
+    "*Put in place: " + string(_put_in_place),
+    "*Taken out: " + string(_took_out_place),
+    "Returned home: " + string(_put_in_place - _took_out_place),
+    "Out of place: " + string(_num_out),
+    "Cobwebs cleaned: " + string(_cobwebs_cleaned) + "/6",
+];
+var _num_lines = array_length(_text_lines);
 
 // Calculate panel size
 var _padding = 20;
 var _line_height = string_height("Ag") + 4;
-var _text_width = max(
-    string_width(_line1),
-    string_width(_line2),
-    string_width(_line3),
-    string_width(_line4)
-);
 
-var _panel_w = _text_width + _padding * 2;
+var _max_text_width = string_width(_text_lines[0]);
+for (var _i = 1; _i < _num_lines; _i++)
+{
+    _max_text_width = max(_max_text_width, string_width(_text_lines[_i]));
+}
+
+var _panel_w = _max_text_width + _padding * 2;
 var _panel_h = _line_height * _num_lines + _padding * 2;
 
 var _left = _cx - _panel_w / 2;
@@ -49,10 +53,12 @@ draw_sprite_stretched(
 draw_set_alpha(1);
 draw_set_color(c_white);
 
-draw_text(_cx, _top + _padding + _line_height * 0.5, _line1);
-draw_text(_cx, _top + _padding + _line_height * 1.5, _line2);
-draw_text(_cx, _top + _padding + _line_height * 2.5, _line3);
-draw_text(_cx, _top + _padding + _line_height * 3.5, _line4);
+var _multiplier = 0.5;
+for (var _i = 0; _i < _num_lines; _i++)
+{
+    draw_text(_cx, _top + _padding + _line_height * _multiplier, _text_lines[_i]);
+    _multiplier += 1;
+}
 
 // Reset draw settings
 draw_set_color(c_white);

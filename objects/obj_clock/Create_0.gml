@@ -15,7 +15,7 @@ am_index = 2;
 
 // TIME TIMES
 
-secs_for_30m = 6; // 10
+secs_for_30m = 2; // 10
 frames_for_30m = secs_for_30m * 60;
 
 secs_before_end_screen = 4;
