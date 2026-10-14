@@ -4,7 +4,7 @@ var _num_out = global.num_art_out_of_place;
 
 //draw_self();
 
-// Save current draw settings
+// Set draw settings
 draw_set_font(font);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);

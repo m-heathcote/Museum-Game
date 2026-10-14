@@ -17,10 +17,10 @@ else
 {
     if (surface_exists(surf))
     {
-        var _cw = camera_get_view_width(view_camera[0]);
-        var _ch = camera_get_view_height(view_camera[0]);
-        var _cx = round(camera_get_view_x(view_camera[0]));
-        var _cy = round(camera_get_view_y(view_camera[0]));
+        var _cw = VIEW_W;
+        var _ch = VIEW_H;
+        var _cx = round(VIEW_X);
+        var _cy = round(VIEW_Y);
         
         surface_set_target(surf);
         
