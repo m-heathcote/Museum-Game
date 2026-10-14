@@ -12,8 +12,8 @@
   "name":"obj_clock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Managers",
-    "path":"folders/Objects/Managers.yy",
+    "name":"Game UI",
+    "path":"folders/Objects/Game UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

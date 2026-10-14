@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Clock",
-    "path":"folders/Sprites/Clock.yy",
+    "name":"Game UI",
+    "path":"folders/Sprites/Game UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_time_up",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"End Game",
+    "path":"folders/Sounds/End Game.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

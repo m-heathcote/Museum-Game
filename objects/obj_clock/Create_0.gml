@@ -10,7 +10,7 @@ and_30 = false;
 am_pm = "pm";
 
 times =             ["10", "11", "12", "1", "2", "3", "4", "5", "6"];
-num_allowed_out =   [   0,    2,    3,   4,   5,   5,   4,   2,  0 ];
+num_allowed_out =   [   1,    2,    3,   4,   5,   5,   4,   2,  0 ];
 am_index = 2;
 
 // TIME TIMES

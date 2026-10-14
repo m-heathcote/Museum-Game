@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_click",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Basic",
+    "path":"folders/Sounds/Basic.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

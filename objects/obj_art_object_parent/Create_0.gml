@@ -80,6 +80,14 @@ move_step_y = -1;
 
 function check_place_collisions(_x, _y) { return check_object_place_collisions(_x, _y); }
 
+function get_alert_spr_ind()
+{
+    if (home_room == "top") { return 0; }
+    else if (home_room == "right") { return 1; }
+    else if (home_room == "left") { return 2; }
+    else { return 3; }
+}
+
 function pick_up()
 { 
     pick_up_object();
@@ -132,6 +140,18 @@ function jump_from_home()
         
         // Edit Stats
         global.num_art_out_of_place++;
+        
+        // Create visual alert
+        audio_play_sound(snd_click, 0, false);
+        instance_create_depth(0, 0, 0,
+            obj_move_alert,
+            {
+                // move_alert variable: value
+                origin_x: x,
+                origin_y: y,
+                spr_ind: get_alert_spr_ind(),
+            }
+        );
     }
     return _success;
 }
