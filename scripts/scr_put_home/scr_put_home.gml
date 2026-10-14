@@ -12,6 +12,10 @@ function put_object_back_home()
         // Play sound
         audio_play_sound(snd_in_place, 0, false);
         
+        // Edit Stats
+        global.player_put_in_place++;
+        global.num_art_out_of_place--;
+        
         // Start setdown
         anim_active = true;
         anim_type = "put_home";

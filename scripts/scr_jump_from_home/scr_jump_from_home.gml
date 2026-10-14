@@ -1,12 +1,21 @@
 function object_jump_from_home()
 {
-    var _found_step = set_start_move_target_and_step();
+    var _found_step = false;
     
-    if (_found_step)
+    if (distance_to_object(player) > move_dist_from_player)
     {
-        object_move_a_step();
-        update_vars();
-        art_home.art_at_home = false;
+        _found_step = set_start_move_target_and_step();
+        
+        if (_found_step)
+        {
+            object_move_a_step();
+            update_vars();
+            art_home.art_at_home = false;
+        }
+    }
+    else
+    {
+        show_debug_message("PLAYER TOO CLOSE - " + string(sprite_index));
     }
     
     return _found_step;

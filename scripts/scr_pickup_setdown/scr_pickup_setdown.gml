@@ -33,7 +33,10 @@ function pick_up_object()
         var _arc_size = 22;
         anim_control_x = (anim_start_x + anim_target_x) / 2;
         anim_control_y = min(anim_start_y, anim_target_y) - _arc_size;
+        
+        return true;
     }
+    return false;
 }
 
 function set_as_held()

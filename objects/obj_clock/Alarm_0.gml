@@ -1,25 +1,34 @@
 // *** Alarm 0 ***
 // runs every in-game 30m
 
-and_30 = !and_30;
-
-if (!and_30)
+if (clock_active)
 {
-    if (hour < array_length(times) - 1)
+    and_30 = !and_30;
+
+    if (!and_30)
     {
-        // move to next hour
-        hour++;
-        
-        if (hour == am_index)
+        if (hour < array_length(times) - 1)
         {
-            am_pm = "am";
+            // move to next hour
+            hour++;
+            
+            if (hour == am_index)
+            {
+                am_pm = "am";
+            }
         }
     }
-    else
+    
+    if (hour < array_length(times) - 1)
     {
-    	// END GAME
+        // reset alarm
+        alarm[0] = frames_for_30m;
+    }
+    else 
+    {
+        // END GAME
+        clock_active = false;
+        audio_play_sound(snd_time_up, 0, false);
+        alarm[1] = secs_before_end_screen * 60;
     }
 }
-
-// reset alarm
-alarm[0] = frames_for_30m;

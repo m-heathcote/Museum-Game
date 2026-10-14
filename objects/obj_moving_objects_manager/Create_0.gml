@@ -17,11 +17,24 @@ living_art = [];
 try_jump_out_cooldown_time = 60;
 try_jump_out_cooldown_active = false;
 
-jump_out_cooldown_min = 240;
-jump_out_cooldown_max = 300;
+jump_out_cooldown_min = 60 * 5;
+jump_out_cooldown_max = 60 * 10;
 jump_out_cooldown_active = false;
 
 // --- FUNCTIONS ---
+
+function increase_jump_out_countdown(_amt=60*6)
+{
+    if (jump_out_cooldown_active)
+    {
+        alarm[0] += _amt;
+    }
+    else 
+    {
+        alarm[0] = _amt;
+        jump_out_cooldown_active = true;
+    }
+}
 
 function move_from_list_to_list(_val, _old_list, _new_list, _known_ind=-1)
 {
@@ -47,12 +60,12 @@ function move_from_list_to_list(_val, _old_list, _new_list, _known_ind=-1)
 
 function switch_to_dormant(_art, _ind=-1)
 {
-    show_debug_message("          ---- SWITCHING " + string(_art.sprite_index) + " TO DORMANT");
+    show_debug_message("---- SWITCHING " + string(_art.sprite_index) + " TO DORMANT");
     return move_from_list_to_list(_art, living_art, dormant_art, _ind);
 }
 
 function switch_to_living(_art, _ind=-1)
 {
-    show_debug_message("          ++++ SWITCHING " + string(_art.sprite_index) + " TO LIVING");
+    show_debug_message("++++ SWITCHING " + string(_art.sprite_index) + " TO LIVING");
     return move_from_list_to_list(_art, dormant_art, living_art, _ind);
 }

@@ -8,6 +8,7 @@ show_step_targets = false; // *** debug ***
 // --- ABOUT ---
 
 player = instance_find(obj_player, 0);
+move_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;
 
@@ -46,8 +47,8 @@ anim_target_y = 0;
 
 // --- MAGIC SETTINGS ---
 
-jump_out_cooldown_min = 60 * 15;
-jump_out_cooldown_max = 60 * 45;
+jump_out_cooldown_min = 60 * 40;
+jump_out_cooldown_max = 60 * 80;
 jump_out_cooldown_active = false;
 
 // --- MOVE SETTINGS ---
@@ -97,17 +98,28 @@ function put_back_home()
     put_object_back_home();
     update_vars();
     
+    // Increase personal cooldown
     var _cooldown = irandom_range(jump_out_cooldown_min, jump_out_cooldown_max);
     alarm[1] = _cooldown;
     jump_out_cooldown_active = true;
+    
+    // Increase manager cooldown
+    move_manager.increase_jump_out_countdown();
 }
 
 function grab_from_home()
 {
-    pick_up_object();
-    at_home = false;
-    reset_move_coords();
-    update_vars();
+    var _success = pick_up_object();
+    if (_success)
+    {
+        at_home = false;
+        reset_move_coords();
+        update_vars();
+        
+        // Edit Stats
+        global.player_took_out_of_place++;
+        global.num_art_out_of_place++;
+    }
 }
 
 function jump_from_home()
@@ -117,6 +129,9 @@ function jump_from_home()
     {
         at_home = false;
         update_vars();
+        
+        // Edit Stats
+        global.num_art_out_of_place++;
     }
     return _success;
 }

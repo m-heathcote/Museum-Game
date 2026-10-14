@@ -5,8 +5,6 @@ var _num_dormant = array_length(dormant_art);
 
 if (!try_jump_out_cooldown_active && !jump_out_cooldown_active && _num_living < max_living_art)
 {
-    show_debug_message("----- can bring art to life -----");
-    
     if (_num_dormant >= 1)
     {
         var _i = irandom(_num_dormant - 1);
