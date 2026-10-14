@@ -5,7 +5,7 @@ art_can_move = true;
 // --- COUNTS ---
 
 total_art_count = instance_number(obj_art_object_parent);
-max_living_art =  4;
+max_living_art =  0;
 
 // --- LISTS ---
 
@@ -14,16 +14,16 @@ living_art = [];
 
 // --- COOLDOWNS ---
 
-try_jump_out_cooldown_time = 60;
+try_jump_out_cooldown_time = 30;
 try_jump_out_cooldown_active = false;
 
 jump_out_cooldown_min = 60 * 5;
-jump_out_cooldown_max = 60 * 10;
+jump_out_cooldown_max = 60 * 8;
 jump_out_cooldown_active = false;
 
 // --- FUNCTIONS ---
 
-function increase_jump_out_countdown(_amt=60*6)
+function increase_jump_out_countdown(_amt=60*3)
 {
     if (jump_out_cooldown_active)
     {

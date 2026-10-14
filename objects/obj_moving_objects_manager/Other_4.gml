@@ -18,6 +18,6 @@ for (var _i = 0; _i < total_art_count; ++_i)
 
 // *********
 // START COOLDOWN             TODO: start with cooldown in some other way
-alarm[0] = 120;
+alarm[0] = 4 * 60;
 jump_out_cooldown_active = true;
 // *********

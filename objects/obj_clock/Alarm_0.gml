@@ -4,10 +4,12 @@
 if (clock_active)
 {
     and_30 = !and_30;
+    var _num_times = array_length(times);
 
+    // If clock has gone from :30 -> :00
     if (!and_30)
     {
-        if (hour < array_length(times) - 1)
+        if (hour < _num_times - 1)
         {
             // move to next hour
             hour++;
@@ -16,10 +18,17 @@ if (clock_active)
             {
                 am_pm = "am";
             }
+            
+            // change num allowed out
+            var _move_manager = instance_find(obj_moving_objects_manager, 0);
+            _move_manager.max_living_art = num_allowed_out[hour];
+            show_debug_message("now " + string(_move_manager.max_living_art) + " allowed out");
         }
     }
     
-    if (hour < array_length(times) - 1)
+    // --- RESET COUNTDOWN or END GAME ---
+    
+    if (hour < _num_times - 1)
     {
         // reset alarm
         alarm[0] = frames_for_30m;

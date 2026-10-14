@@ -14,9 +14,11 @@ var _cx = x;
 var _cy = y;
 
 // Text lines
-var _line1 = "Put in place: " + string(_put_in_place);
-var _line2 = "Taken out: " + string(_took_out_place);
-var _line3 = "Out of place: " + string(_num_out);
+var _line1 = "*Put in place: " + string(_put_in_place);
+var _line2 = "*Taken out: " + string(_took_out_place);
+var _line3 = "Returned home: " + string(_put_in_place - _took_out_place);
+var _line4 = "Out of place: " + string(_num_out);
+var _num_lines = 4;
 
 // Calculate panel size
 var _padding = 20;
@@ -24,11 +26,12 @@ var _line_height = string_height("Ag") + 4;
 var _text_width = max(
     string_width(_line1),
     string_width(_line2),
-    string_width(_line3)
+    string_width(_line3),
+    string_width(_line4)
 );
 
 var _panel_w = _text_width + _padding * 2;
-var _panel_h = _line_height * 3 + _padding * 2;
+var _panel_h = _line_height * _num_lines + _padding * 2;
 
 var _left = _cx - _panel_w / 2;
 var _top = _cy - _panel_h / 2;
@@ -49,6 +52,7 @@ draw_set_color(c_white);
 draw_text(_cx, _top + _padding + _line_height * 0.5, _line1);
 draw_text(_cx, _top + _padding + _line_height * 1.5, _line2);
 draw_text(_cx, _top + _padding + _line_height * 2.5, _line3);
+draw_text(_cx, _top + _padding + _line_height * 3.5, _line4);
 
 // Reset draw settings
 draw_set_color(c_white);
