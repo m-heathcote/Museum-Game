@@ -142,7 +142,7 @@ function jump_from_home()
         global.num_art_out_of_place++;
         
         // Create visual alert
-        audio_play_sound(snd_click, 0, false);
+        audio_play_sound(snd_click, 0, false);  // TODO: ADD BETTER SOUND HERE *****
         instance_create_depth(0, 0, 0,
             obj_move_alert,
             {
