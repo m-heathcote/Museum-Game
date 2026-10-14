@@ -53,13 +53,13 @@ jump_out_cooldown_active = false;
 
 // --- MOVE SETTINGS ---
 
-step_size = 15;
+step_size = 20;
 target_range = 15; // how many steps away
-move_frequency = 50; // percentage
-move_dist_from_player = 92;
+move_frequency = 80; // percentage
+move_dist_from_player = 87;
 
 move_cooldown_min = 6;
-move_cooldown_max = 85;
+move_cooldown_max = 30;
 move_cooldown_active = false;
 
 // --- MOVE MEMORY ---

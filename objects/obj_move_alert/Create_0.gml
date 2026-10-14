@@ -4,7 +4,7 @@ spr_alpha = 1;
 fading = false;
 fade_speed = 0.05;
 
-frames_on_screen = 60 * 1;
+frames_on_screen = 60 * 0.5;
 alarm[0] = frames_on_screen;
 
 function room_to_gui_x_coord(_x)
