@@ -34,7 +34,6 @@ function look_at_note_and_list()
 {
     create_dialog(global.DIALOGS.note_p1, true, id, false);
     
-    //in_first_viewing = false;
     player_has_interacted = true;
 }
 
@@ -50,9 +49,13 @@ function look_at_list()
     alarm[1] = 5;
     
     player.frozen = true;
+    
+    if (!player_has_interacted)
+    {
+        player_has_interacted = true;
+    }
 }
 
-//interact_func = in_first_viewing ? look_at_note_and_list : look_at_list;
 interact_func = function () 
 {
     if (in_first_viewing) { look_at_note_and_list(); }

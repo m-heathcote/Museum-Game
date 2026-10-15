@@ -23,6 +23,22 @@ function check_object_collisions(_move_x, _move_y)
     }
 
     ds_list_destroy(_list);
+    
+    // Check for dialog zone
+    var _dialog_zone = instance_place(
+        x + _move_x,
+        y + _move_y,
+        obj_dialog_trigger_zone
+    );
+    
+    // Check if dialog zone enabled
+    if (_dialog_zone != noone)
+    {
+        if (_dialog_zone.enabled)
+        {
+            return true;
+        }
+    }
 
     return false;
 }

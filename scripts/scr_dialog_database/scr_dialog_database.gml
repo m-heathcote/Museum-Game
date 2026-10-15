@@ -57,6 +57,19 @@ function create_dialog_database()
             },
         ],
         
+        go_back: [
+            {
+                name: "-",
+                msg: "I should check that to-do list from the boss first...",
+                color: c_gray,
+            },
+            {
+                name: "-",
+                msg: "It's back on the welcome desk.",
+                color: c_gray,
+            },
+        ],
+        
         note_p1: [ 
             {
                 name: "Boss",
@@ -83,8 +96,6 @@ function create_dialog_database()
                         
                         var _clock = instance_find(obj_clock, 0);
                         _clock.show_clock = false;
-                        
-                        show_debug_message("setting SHOW LIST");
                     }
                     
                     return -1;
@@ -113,13 +124,16 @@ function create_dialog_database()
                     if (instance_exists(_source))
                     {
                         _source.in_first_viewing = false;
+                        _source.player_has_interacted = false;
                         
-                        // START CLOCK
+                        // Start clock
                         var _clock = instance_find(obj_clock, 0);
                         _clock.show_clock = true;
                         _clock.enable_clock();
                         
-                        show_debug_message("end first viewing");
+                        // Disable trigger zone
+                        var _trigger_zone = instance_find(obj_dialog_trigger_zone, 0);
+                        _trigger_zone.disable_dialog_zone();
                     }
                     
                     return -1;
