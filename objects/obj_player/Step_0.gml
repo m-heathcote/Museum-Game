@@ -17,9 +17,14 @@ update_animation();
 // update place_obj_x and place_obj_y
 update_place_position();
 
-var _art_home_in_range =
-    instance_exists(obj_art_home_parent)
-    && distance_to_object(obj_art_home_parent) < obj_art_home_parent.interact_distance;
+var _art_home_in_range = false;
+with (obj_art_home_parent)
+{
+    if (distance_to_object(other) < interact_distance)
+    {
+        other._art_home_in_range = true;
+    }
+}
 
 if (held_obj != noone
     && !obj_anim_active

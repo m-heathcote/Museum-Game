@@ -7,7 +7,6 @@ show_step_targets = false; // *** debug ***
 
 // --- ABOUT ---
 
-//player = instance_find(obj_player, 0); // now declared in room_object
 move_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;

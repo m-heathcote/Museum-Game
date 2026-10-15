@@ -1,7 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-//player = instance_find(obj_player, 0);
 moving_obj_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;
@@ -17,7 +16,7 @@ function return_art_object()
         art_at_home = true;
         moving_obj_manager.switch_to_dormant(art_object);
     }
-    else if (player.held_obj != noone)
+    else if (player.held_obj != noone && !player.obj_anim_active)
     {
         show_debug_message("INCORRECT art object");
         audio_play_sound(snd_incorrect, 0, false);
