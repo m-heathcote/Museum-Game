@@ -25,7 +25,7 @@
   ],
   "name":"spr_wall_thing",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Interactables",
     "path":"folders/Sprites/Things/Interactables.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":7,
     "yorigin":0,
   },
   "swatchColours":null,

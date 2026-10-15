@@ -3,8 +3,10 @@ show_display = false;
 player = instance_find(obj_player, 0);
 
 // Sprite
-spr = spr_climate_control_box;
+//spr = spr_climate_control_box_bigger;
 
-// Dimensions
-display_w = 200;
-display_h = 500;
+// Dimensions / Pos
+display_w = 150;
+display_h = 200;
+
+display_y_offset = -3;

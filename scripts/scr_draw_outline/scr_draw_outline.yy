@@ -6,7 +6,7 @@
   "name":"scr_draw_outline",
   "parent":{
     "name":"Drawing Objects",
-    "path":"folders/Scripts/Drawing Objects.yy",
+    "path":"folders/Scripts/Objects/Drawing Objects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

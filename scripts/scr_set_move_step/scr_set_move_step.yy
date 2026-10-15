@@ -6,7 +6,7 @@
   "name":"scr_set_move_step",
   "parent":{
     "name":"Object Movement",
-    "path":"folders/Scripts/Object Movement.yy",
+    "path":"folders/Scripts/Objects/Object Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

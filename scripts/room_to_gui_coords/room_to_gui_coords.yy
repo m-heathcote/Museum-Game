@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"room_to_gui_coords",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"room_to_gui_coords",
+  "parent":{
+    "name":"GUI",
+    "path":"folders/Scripts/GUI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -47,8 +47,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Game UI",
-    "path":"folders/Sprites/Game UI.yy",
+    "name":"alert",
+    "path":"folders/Sprites/Game UI/alert.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

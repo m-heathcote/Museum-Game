@@ -6,7 +6,7 @@
   "name":"scr_object_update_vars",
   "parent":{
     "name":"Object Interactions",
-    "path":"folders/Scripts/Object Interactions.yy",
+    "path":"folders/Scripts/Objects/Object Interactions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

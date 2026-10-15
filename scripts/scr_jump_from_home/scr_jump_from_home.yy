@@ -6,7 +6,7 @@
   "name":"scr_jump_from_home",
   "parent":{
     "name":"Object Movement",
-    "path":"folders/Scripts/Object Movement.yy",
+    "path":"folders/Scripts/Objects/Object Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
