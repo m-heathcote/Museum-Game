@@ -18,6 +18,8 @@ player_anim_active = false;
 
 frozen = false;
 
+has_picked_up_art = false;
+
 // --- SPEED / MOVEMENT SETTINGS ---
 
 move_speed = 1.85;  // 1.85

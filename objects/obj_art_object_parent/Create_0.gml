@@ -7,7 +7,7 @@ show_step_targets = false; // *** debug ***
 
 // --- ABOUT ---
 
-//player = instance_find(obj_player, 0);
+//player = instance_find(obj_player, 0); // now declared in room_object
 move_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;
@@ -93,6 +93,11 @@ function pick_up()
     pick_up_object();
     reset_move_coords();
     update_vars();
+    
+    if (!player.has_picked_up_art)
+    {
+        player.has_picked_up_art = true;
+    }
 }
 
 function set_down()
