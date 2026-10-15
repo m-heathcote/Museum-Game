@@ -7,6 +7,7 @@ global.num_art_out_of_place = 0;
 
 global.cobwebs_cleaned = 0;
 global.temps_set = 0;
+global.door_locked = false;
 
 global.points = 0;
 global.fired = false;

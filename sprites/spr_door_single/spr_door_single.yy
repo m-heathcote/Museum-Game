@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Decorations",
-    "path":"folders/Sprites/Things/Decorations.yy",
+    "name":"Interactables",
+    "path":"folders/Sprites/Things/Interactables.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

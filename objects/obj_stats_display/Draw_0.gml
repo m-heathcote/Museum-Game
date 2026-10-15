@@ -21,6 +21,7 @@ var _text_lines = [
     "Out of place: " + string(_num_out),
     "Cobwebs cleaned: " + string(global.cobwebs_cleaned) + "/6",
     "Temps set: " + string(global.temps_set) + "/3",
+    "Locked door: " + string(global.door_locked),
     "Points: " + string(global.points),
 ];
 var _num_lines = array_length(_text_lines);

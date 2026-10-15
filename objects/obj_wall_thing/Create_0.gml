@@ -5,6 +5,7 @@ interactable = true;
 blocks_player = false;
 
 in_use = false;
+just_opened = false;
 display_y_offset = -3;
 
 current_setting = start_setting;
@@ -19,6 +20,9 @@ function use_wall_thing()
     
     in_use = true;
     interactable = false;
+    
+    just_opened = true;
+    alarm[1] = 5;
     
     player.frozen = true;
 }
