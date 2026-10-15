@@ -3,8 +3,9 @@ global.paused = false;
 tiles_col = undefined;
 
 show_move_controls = false;
+controls_margin = 20;
 control_alpha = 0.9;
-controls_frames = 60 * 8;
+controls_frames = 60 * 6;
 controls_fading = false;
 fade_rate = 0.01;
 
