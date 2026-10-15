@@ -7,6 +7,9 @@ message_func_ran = false;  // tracks if a during message function has run
 show_choices = false; // if prompt, controls if choices displayed
 text_paused = false;  // control pause between answering prompt and next message
 newline_pause = 30;
+coma_pause = 15;
+
+unfreeze_at_end = true;
 
 sound_during_dialog = true;
 pausing_between_sounds = false;
@@ -21,12 +24,13 @@ gui_w = GUI_W;
 gui_h = GUI_H;
 
 // Dimensions
-box_w_multiple = 0.9;    // width of box compared to gui width
-box_h_multiple = 0.25;    // height of box compared to gui height
+box_w_multiple = 0.82;    // width of box compared to gui width
+box_h_multiple = 0.28;    // height of box compared to gui height
 below_margin = 20;
 
-text_x_padding = 32;
-text_y_padding = 32;
+text_x_padding = 30;
+text_y_padding = 30;
+line_sep = 50;
 
 // Font
 font = fnt_dialog;
@@ -80,6 +84,14 @@ function advance_or_end_dialog(_jump_to=-2)
     {
         // End of messages
         
+        if (unfreeze_at_end)
+        {
+            // Unfreeze player
+            var _player = instance_find(obj_player, 0);
+            _player.frozen = false;
+        }
+        
+        // Destroy
         instance_destroy();
     }
     else

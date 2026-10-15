@@ -10,6 +10,7 @@ blocks_player = false;
 show_list = false;
 just_opened = false;
 player_has_interacted = false;
+in_first_viewing = true;
 
 // ABOUT DISPLAY
 
@@ -29,6 +30,14 @@ y_padding = 35;
 x_margin = 20;
 y_margin = 40;
 
+function look_at_note_and_list()
+{
+    create_dialog(global.DIALOGS.note_p1, true, id, false);
+    
+    //in_first_viewing = false;
+    player_has_interacted = true;
+}
+
 function look_at_list()
 {
     // Play sound
@@ -41,11 +50,11 @@ function look_at_list()
     alarm[1] = 5;
     
     player.frozen = true;
-    
-    if (!player_has_interacted)
-    {
-        player_has_interacted = true;
-    }
 }
 
-interact_func = look_at_list;
+//interact_func = in_first_viewing ? look_at_note_and_list : look_at_list;
+interact_func = function () 
+{
+    if (in_first_viewing) { look_at_note_and_list(); }
+    else { look_at_list(); }
+}

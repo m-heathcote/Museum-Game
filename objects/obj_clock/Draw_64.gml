@@ -1,3 +1,5 @@
+if (instance_exists(obj_dialog)) exit;
+
 if (show_clock)
 {
     var _gui_w = GUI_W;

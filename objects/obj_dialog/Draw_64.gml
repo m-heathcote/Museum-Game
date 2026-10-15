@@ -31,10 +31,10 @@ draw_text(text_x, text_y, string_upper(_name));
 draw_set_color(c_white);
 draw_set_alpha(1);
 
-var _text_y_lower = text_y + font_size + (text_y_padding / 2);
+var _text_y_lower = text_y + font_size + (text_y_padding);
 
 // ----- MESSAGE -----
-draw_text_ext(text_x, _text_y_lower, draw_message, -1, text_max_w);
+draw_text_ext(text_x, _text_y_lower, draw_message, line_sep, text_max_w);
 
 // ----- PROMPT ANSWERS -----
 var _has_choices = variable_struct_exists(_message, "choices");

@@ -30,6 +30,15 @@ else if (current_char < string_length(_str))
         exit;
     }
     
+    // Pause with comas
+    if (!text_paused && string_char_at(_str, current_char) == ",")
+    {
+        text_paused = true;
+        alarm[1] = coma_pause;
+        current_char += char_speed;
+        exit;
+    }
+    
     // ----- STILL TYPING -----
     
     if (current_char > 3 && (keyboard_check_pressed(input_key) || keyboard_check_pressed(alt_input_key)))

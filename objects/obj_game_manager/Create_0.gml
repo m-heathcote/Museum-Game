@@ -4,7 +4,7 @@ global.DIALOGS = create_dialog_database();
 
 tiles_col = undefined;
 
-delay_before_first_dialog = 45;
+delay_before_first_dialog = 38;
 
 show_move_controls = false;
 controls_margin = 20;

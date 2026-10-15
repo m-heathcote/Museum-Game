@@ -42,7 +42,8 @@ function create_dialog_database()
                 name: "-",
                 msg: "The boss said she left a to-do list on the welcome desk.\nI should check it out...",
                 color: c_gray,
-                after_msg_action: function(){
+                after_msg_action: function()
+                {
                     var _clock = instance_find(obj_clock, 0);
                     _clock.show_clock = true;
                     
@@ -50,10 +51,6 @@ function create_dialog_database()
                     var _manager = instance_find(obj_game_manager, 0);
                     _manager.show_move_controls = true;
                     _manager.alarm[0] = _manager.controls_frames;
-                    
-                    // Unfreeze player
-                    var _player = instance_find(obj_player, 0);
-                    _player.frozen = false;
                     
                     return -1;
                 },
@@ -63,19 +60,35 @@ function create_dialog_database()
         note_p1: [ 
             {
                 name: "Boss",
-                msg: "Hey, welcome to your first night at Little Museum!"
+                msg: "'Hey, welcome to your first night at Little Museum!'"
             },
             {
                 name: "Boss",
-                msg: "It should be a pretty chill shift."
+                msg: "'It should be a pretty chill shift.'"
             },
             {
                 name: "Boss",
-                msg: "I mean, it's the middle of the night, what could possibly go wrong?"
+                msg: "'I mean, it's the middle of the night, what could possibly go wrong?'"
             },
             {
                 name: "Boss",
-                msg: "I've attached a to-do list for you since we can't have you just sitting around all night."
+                msg: "'I've attached a to-do list for you since we can't have you just sitting around all night.'",
+                after_msg_action: function(_source)
+                {
+                    if (instance_exists(_source))
+                    {
+                        _source.show_list = true;
+                        _source.just_opened = true;
+                        _source.alarm[1] = 5; // delay to unset just_opened
+                        
+                        var _clock = instance_find(obj_clock, 0);
+                        _clock.show_clock = false;
+                        
+                        show_debug_message("setting SHOW LIST");
+                    }
+                    
+                    return -1;
+                },
             },
         ],
         
@@ -86,15 +99,31 @@ function create_dialog_database()
             },
             {
                 name: "Boss",
-                msg: "For some reason that last point tends to be hard for new hires to follow."
+                msg: "'For some reason, that last point tends to be hard for new night guards to follow.'"
             },
             {
                 name: "Boss",
-                msg: "One morning I found a statue in the fountain!"
+                msg: "'One morning I found a statue in the fountain!'"
             },
             {
                 name: "Boss",
-                msg: "It's not like it came to life and walked over there!"
+                msg: "'It's not like it came to life and walked over there!'",
+                after_msg_action: function(_source)
+                {
+                    if (instance_exists(_source))
+                    {
+                        _source.in_first_viewing = false;
+                        
+                        // START CLOCK
+                        var _clock = instance_find(obj_clock, 0);
+                        _clock.show_clock = true;
+                        _clock.enable_clock();
+                        
+                        show_debug_message("end first viewing");
+                    }
+                    
+                    return -1;
+                },
             },
         ],
         

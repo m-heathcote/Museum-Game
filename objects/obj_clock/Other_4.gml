@@ -1,1 +1,4 @@
-alarm[0] = frames_for_30m;
+if (clock_active)
+{
+    enable_clock();
+}

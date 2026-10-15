@@ -35,3 +35,9 @@ y_screen_padding = 28;
 font = fnt_clock;
 
 box_spr = spr_clock_box_big;
+
+function enable_clock()
+{
+    clock_active = true;
+    alarm[0] = frames_for_30m;
+}
