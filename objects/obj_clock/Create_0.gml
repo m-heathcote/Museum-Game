@@ -1,7 +1,9 @@
 // ON / OFF
 
-clock_active = true;
-show_clock = true;
+clock_active = false;
+show_clock = false;
+
+move_manager = instance_find(obj_moving_objects_manager, 0);
 
 // TIME TRACKING
 

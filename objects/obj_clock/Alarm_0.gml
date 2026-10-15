@@ -5,6 +5,14 @@ if (clock_active)
 {
     and_30 = !and_30;
     var _num_times = array_length(times);
+    
+    if (and_30 && hour == 0)
+    {
+        // Out of first 30m where nothing happens
+        // change num allowed out
+        move_manager.max_living_art = num_allowed_out[hour];
+        show_debug_message("now " + string(move_manager.max_living_art) + " allowed out");
+    }
 
     // If clock has gone from :30 -> :00
     if (!and_30)
@@ -20,9 +28,8 @@ if (clock_active)
             }
             
             // change num allowed out
-            var _move_manager = instance_find(obj_moving_objects_manager, 0);
-            _move_manager.max_living_art = num_allowed_out[hour];
-            show_debug_message("now " + string(_move_manager.max_living_art) + " allowed out");
+            move_manager.max_living_art = num_allowed_out[hour];
+            show_debug_message("now " + string(move_manager.max_living_art) + " allowed out");
         }
     }
     

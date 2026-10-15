@@ -8,9 +8,12 @@ if (room == rm_1_Museum)
     // Get collision layer
     tiles_col = layer_tilemap_get_id("Tiles_Col");
     
-    // Show movement controls
-    show_move_controls = true;
-    alarm[0] = controls_frames;
+    // Trigger start dialog on a delay
+    alarm[1] = delay_before_first_dialog;
+    
+    // freeze player
+    var _player = instance_find(obj_player, 0);
+    _player.frozen = true;
 }
 
 if (!instance_exists(obj_stats_manager))
