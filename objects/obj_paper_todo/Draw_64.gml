@@ -47,9 +47,16 @@ var _line_sep = y_padding * 1.3;
 // Item array
 var _items = [
     "lock the front doors",
-    "use the wall panels to set the climate control in each room [3]",
-    "clean cobwebs [6]",
-    "make sure EVERYTHING IS WHERE IT BELONGS BY THE END OF YOUR SHIFT AT 6AM !!!"
+    "use the wall panels to set the climate control in each room [" + string(global.temps_set) + "/3]",
+    "clean cobwebs [" + string(global.cobwebs_cleaned) + "/6]",
+    "make sure EVERYTHING IS WHERE IT BELONGS BY THE END OF YOUR SHIFT AT 6AM !!!\n["
+        + string(global.num_art_out_of_place) + " items out of place]"
+];
+var _checked = [
+    global.door_locked,
+    global.temps_set == 3,
+    global.cobwebs_cleaned == 6,
+    0
 ];
 
 // Set item draw settings
@@ -61,7 +68,7 @@ draw_set_valign(fa_top);
 // Draw checkboxes and text
 for (var _i = 0; _i < array_length(_items); _i++)
 {
-    draw_sprite(spr_checkbox, 0, _checkbox_x, _item_y);
+    draw_sprite(spr_checkbox, _checked[_i], _checkbox_x, _item_y);
     
     draw_text_ext(_item_text_x, _item_y + _text_y_offset, _items[_i], _line_sep, _max_text_w);
     

@@ -21,8 +21,8 @@ checkbox_h = sprite_get_height(spr_checkbox);
 title_font = fnt_todo_title;
 text_font = fnt_todo_text;
 
-box_w = 620;
-box_h = 700;
+box_w = 600;
+box_h = 750;
 
 x_padding = 20;
 y_padding = 35;

@@ -2,5 +2,11 @@ global.paused = false;
 
 tiles_col = undefined;
 
+show_move_controls = false;
+control_alpha = 0.9;
+controls_frames = 60 * 8;
+controls_fading = false;
+fade_rate = 0.01;
+
 // Set audio falloff model
 audio_falloff_set_model(audio_falloff_linear_distance_clamped);

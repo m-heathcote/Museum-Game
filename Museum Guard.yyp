@@ -220,6 +220,7 @@
     {"id":{"name":"spr_color_x","path":"sprites/spr_color_x/spr_color_x.yy",},},
     {"id":{"name":"spr_computer_keyboard","path":"sprites/spr_computer_keyboard/spr_computer_keyboard.yy",},},
     {"id":{"name":"spr_computer","path":"sprites/spr_computer/spr_computer.yy",},},
+    {"id":{"name":"spr_ctrl_all_move","path":"sprites/spr_ctrl_all_move/spr_ctrl_all_move.yy",},},
     {"id":{"name":"spr_ctrl_door","path":"sprites/spr_ctrl_door/spr_ctrl_door.yy",},},
     {"id":{"name":"spr_ctrl_interact","path":"sprites/spr_ctrl_interact/spr_ctrl_interact.yy",},},
     {"id":{"name":"spr_ctrl_move","path":"sprites/spr_ctrl_move/spr_ctrl_move.yy",},},

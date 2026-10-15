@@ -17,8 +17,8 @@ living_art = [];
 try_jump_out_cooldown_time = 30;
 try_jump_out_cooldown_active = false;
 
-jump_out_cooldown_min = 60 * 2;
-jump_out_cooldown_max = 60 * 5;
+jump_out_cooldown_min = 60 * 3;
+jump_out_cooldown_max = 60 * 7;
 jump_out_cooldown_active = false;
 
 // --- FUNCTIONS ---
