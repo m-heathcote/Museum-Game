@@ -52,12 +52,12 @@ jump_out_cooldown_active = false;
 
 // --- MOVE SETTINGS ---
 
-step_size = 20;
+step_size = 18;
 target_range = 15; // how many steps away
-move_frequency = 80; // percentage
+move_frequency = 70; // percentage
 move_dist_from_player = 87;
 
-move_cooldown_min = 6;
+move_cooldown_min = 10;
 move_cooldown_max = 30;
 move_cooldown_active = false;
 
@@ -131,6 +131,11 @@ function grab_from_home()
         // Edit Stats
         global.player_took_out_of_place++;
         global.num_art_out_of_place++;
+        
+        if (!player.has_picked_up_art)
+        {
+            player.has_picked_up_art = true;
+        }
     }
 }
 

@@ -118,7 +118,8 @@ function create_dialog_database()
             },
             {
                 name: "Boss",
-                msg: "'It's not like it came to life and walked over there!'",
+                msg: "'It's not like it came to life and walked over there!\n"
+                        + "Can you imagine that!'",
                 after_msg_action: function(_source)
                 {
                     if (instance_exists(_source))

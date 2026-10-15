@@ -31,6 +31,7 @@
     {"$GMFolder":"","%Name":"Testing","folderPath":"folders/Rooms/Testing.yy","name":"Testing","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Drawing Player","folderPath":"folders/Scripts/Drawing Player.yy","name":"Drawing Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Dialog","folderPath":"folders/Scripts/Dialog.yy","name":"Dialog","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GUI","folderPath":"folders/Scripts/GUI.yy","name":"GUI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Scripts/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Drawing Objects","folderPath":"folders/Scripts/Objects/Drawing Objects.yy","name":"Drawing Objects","resourceType":"GMFolder","resourceVersion":"2.0",},

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_dialog_database",
   "parent":{
-    "name":"GUI",
-    "path":"folders/Scripts/GUI.yy",
+    "name":"Dialog",
+    "path":"folders/Scripts/Dialog.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

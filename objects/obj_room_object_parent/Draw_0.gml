@@ -12,7 +12,7 @@ if (has_shadow && shadow_spr != noone)
 
 if (showing_outline && outline_enabled)
 {
-    draw_sprite_outline(sprite_index, 1, 0.35, image_xscale, image_yscale, image_angle);
+    draw_sprite_outline(sprite_index, 1, 0.5, image_xscale, image_yscale, image_angle);
 }
 
 draw_self();
