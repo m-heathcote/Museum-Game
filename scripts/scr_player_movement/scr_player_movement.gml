@@ -1,6 +1,6 @@
 function get_input()
 {
-    if (obj_anim_active || player_anim_active)
+    if (obj_anim_active || player_anim_active || frozen)
     {
         input_x = 0;
         input_y = 0;

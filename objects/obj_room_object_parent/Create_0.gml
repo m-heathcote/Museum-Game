@@ -1,5 +1,7 @@
 show_collision_mask = false; // ** debug **
 
+player = instance_find(obj_player, 0);
+
 interactable = false;
 
 interact_key = ord("E");

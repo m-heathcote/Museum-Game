@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-player = instance_find(obj_player, 0);
+//player = instance_find(obj_player, 0);
 moving_obj_manager = instance_find(obj_moving_objects_manager, 0);
 
 interactable = true;

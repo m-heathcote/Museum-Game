@@ -4,7 +4,7 @@ if (interactable && player_in_range)
 {
     showing_outline = true;
     
-    if (keyboard_check_pressed(interact_key))
+    if (keyboard_check_pressed(interact_key) && !player.frozen)
     {
         interact_func();
     }

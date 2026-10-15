@@ -16,6 +16,8 @@ facing = point_direction(0, 0, 0, 1);
 obj_anim_active = false;
 player_anim_active = false;
 
+frozen = false;
+
 // --- SPEED / MOVEMENT SETTINGS ---
 
 move_speed = 1.85;  // 1.85
