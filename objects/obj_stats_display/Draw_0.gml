@@ -1,7 +1,6 @@
 var _put_in_place = global.player_put_in_place;
 var _took_out_place = global.player_took_out_of_place;
 var _num_out = global.num_art_out_of_place;
-var _cobwebs_cleaned = global.cobwebs_cleaned;
 
 //draw_self();
 
@@ -20,7 +19,9 @@ var _text_lines = [
     "*Taken out: " + string(_took_out_place),
     "Returned home: " + string(_put_in_place - _took_out_place),
     "Out of place: " + string(_num_out),
-    "Cobwebs cleaned: " + string(_cobwebs_cleaned) + "/6",
+    "Cobwebs cleaned: " + string(global.cobwebs_cleaned) + "/6",
+    "Temps set: " + string(global.temps_set) + "/3",
+    "Points: " + string(global.points),
 ];
 var _num_lines = array_length(_text_lines);
 

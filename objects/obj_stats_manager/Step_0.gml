@@ -1,1 +1,0 @@
-global.fired = global.num_art_out_of_place > 2;

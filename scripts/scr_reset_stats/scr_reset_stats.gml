@@ -6,6 +6,8 @@ function reset_stats()
     global.num_art_out_of_place = 0;
     
     global.cobwebs_cleaned = 0;
+    global.temps_set = 0;
     
+    global.points = 0;
     global.fired = false;
 }
