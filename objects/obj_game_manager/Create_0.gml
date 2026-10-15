@@ -1,5 +1,7 @@
 global.paused = false;
 
+global.enable_intro_tutorial = false; // SHOULD BE SET TO TRUE FOR GAME RELEASE
+
 global.DIALOGS = create_dialog_database();
 
 tiles_col = undefined;

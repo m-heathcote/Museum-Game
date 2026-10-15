@@ -13,6 +13,8 @@ function get_input()
     var _down  = keyboard_check(ord("S")) || keyboard_check(vk_down);
     var _up    = keyboard_check(ord("W")) || keyboard_check(vk_up);
     
+    is_running = keyboard_check(vk_shift);
+    /*
     if (held_obj == noone)
     {
         is_running = keyboard_check(vk_shift);
@@ -21,6 +23,7 @@ function get_input()
     {
     	is_running = false;
     }
+     * */
     
     input_x = _right - _left;
     input_y = _down - _up;
