@@ -37,6 +37,13 @@ function create_dialog_database()
                 name: "-",
                 msg: "First night on the job!",
                 color: c_gray,
+                after_msg_action: function()
+                {
+                    var _player = instance_find(obj_player, 0);
+                    _player.has_seen_a_dialog = true;
+                    
+                    return 1;
+                },
             },
             {
                 name: "-",
@@ -127,7 +134,7 @@ function create_dialog_database()
                     if (instance_exists(_source))
                     {
                         _source.in_first_viewing = false;
-                        _source.player_has_interacted = false;
+                        //_source.player_has_interacted = false;
                         
                         // Start clock
                         var _clock = instance_find(obj_clock, 0);

@@ -107,3 +107,13 @@ if (_has_choices && show_choices)
     draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 }
+
+var _player = instance_find(obj_player, 0);
+//if (!_player.has_seen_a_dialog && waiting_to_advance)
+if (waiting_to_advance)
+{
+    var _tx = box_x + box_w - 15;
+    var _ty = box_y + box_h - 40;
+    
+    draw_sprite_ext(spr_ctrl_interact, 0, _tx, _ty, 1, 1, 0, c_white, 0.9);
+}

@@ -19,6 +19,7 @@ player_anim_active = false;
 frozen = false;
 
 has_picked_up_art = false;
+has_seen_a_dialog = false;
 
 // --- SPEED / MOVEMENT SETTINGS ---
 

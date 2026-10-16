@@ -44,6 +44,11 @@ if (show_clock)
         0.7
     );
     
+    if (hour >= 7)
+    {
+        draw_set_color(#C95050);
+    }
+    
     // Draw time
     draw_set_halign(fa_right);
     draw_set_valign(fa_middle);

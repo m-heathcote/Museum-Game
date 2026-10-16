@@ -71,6 +71,8 @@ else
 {
     // ----- DONE TYPING -----
     
+    waiting_to_advance = true;
+    
     if (_has_choices)
     {
         // Show answer buttons
@@ -130,5 +132,6 @@ else
     {
         // Continue
         advance_or_end_dialog();
+        waiting_to_advance = false;
     }
 }

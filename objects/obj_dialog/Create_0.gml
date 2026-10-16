@@ -9,6 +9,8 @@ text_paused = false;  // control pause between answering prompt and next message
 newline_pause = 22;
 coma_pause = 15;
 
+waiting_to_advance = false;
+
 unfreeze_at_end = true;
 
 sound_during_dialog = true;
