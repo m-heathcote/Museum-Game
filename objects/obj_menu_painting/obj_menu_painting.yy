@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_character_mona",
-    "path":"sprites/spr_character_mona/spr_character_mona.yy",
+    "name":"spr_menu_mona",
+    "path":"sprites/spr_menu_mona/spr_menu_mona.yy",
   },
   "spriteMaskId":null,
   "visible":true,

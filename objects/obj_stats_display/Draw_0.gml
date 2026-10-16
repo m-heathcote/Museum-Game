@@ -26,6 +26,15 @@ var _text_lines = [
 ];
 var _num_lines = array_length(_text_lines);
 
+var _bad_color = #C95050;
+var _colors = [
+    c_white,
+    (global.num_art_out_of_place > 0) ? _bad_color : c_white,
+    (!global.door_locked) ? _bad_color : c_white,
+    (global.temps_set != 3) ? _bad_color : c_white,
+    c_white
+];
+
 // Calculate panel size
 var _padding = 20;
 var _line_height = string_height("Ag") + 4;
@@ -58,6 +67,7 @@ draw_set_color(c_white);
 var _multiplier = 0.5;
 for (var _i = 0; _i < _num_lines; _i++)
 {
+    draw_set_colour(_colors[_i]);
     draw_text(_cx, _top + _padding + _line_height * _multiplier, _text_lines[_i]);
     _multiplier += 1;
 }

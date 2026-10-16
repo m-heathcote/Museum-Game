@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dino_smaller",
-    "path":"sprites/spr_dino_smaller/spr_dino_smaller.yy",
+    "name":"spr_menu_dino_2",
+    "path":"sprites/spr_menu_dino_2/spr_menu_dino_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

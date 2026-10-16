@@ -7,7 +7,7 @@ click_func = function()
 {
     create_simple_transition(
         rm_Title,
-        new TransitionFade(#292935),  // purple #292935   gray #212121
+        new TransitionFade(#2A2B3B),  // purple #292935   new purple #2A2B3B   gray #212121
         20,
         15,
         20

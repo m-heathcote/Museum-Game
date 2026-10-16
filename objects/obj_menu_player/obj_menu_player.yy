@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_carry_down",
-    "path":"sprites/spr_player_idle_carry_down/spr_player_idle_carry_down.yy",
+    "name":"spr_menu_player",
+    "path":"sprites/spr_menu_player/spr_menu_player.yy",
   },
   "spriteMaskId":null,
   "visible":true,
