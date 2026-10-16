@@ -7,7 +7,8 @@ if (!show_list) exit;
 if (!just_opened &&
         (keyboard_check_pressed(ord("E"))
         || keyboard_check_pressed(vk_escape)
-        || keyboard_check_pressed(vk_enter)))
+        || keyboard_check_pressed(vk_enter)
+        || keyboard_check_pressed(ord("T"))))
 {
     if (in_first_viewing)
     {

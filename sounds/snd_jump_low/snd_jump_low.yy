@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_jump_low",
   "parent":{
-    "name":"NEW",
-    "path":"folders/Sounds/NEW.yy",
+    "name":"Art Objects",
+    "path":"folders/Sounds/Art Objects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

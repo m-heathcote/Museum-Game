@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_art_move",
   "parent":{
-    "name":"Objects",
-    "path":"folders/Sounds/Objects.yy",
+    "name":"Art Objects",
+    "path":"folders/Sounds/Art Objects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

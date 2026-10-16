@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_clean_web",
   "parent":{
-    "name":"NEW",
-    "path":"folders/Sounds/NEW.yy",
+    "name":"Interactables",
+    "path":"folders/Sounds/Interactables.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

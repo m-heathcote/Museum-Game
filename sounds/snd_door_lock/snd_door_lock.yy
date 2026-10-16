@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_door_lock",
   "parent":{
-    "name":"NEW",
-    "path":"folders/Sounds/NEW.yy",
+    "name":"Interactables",
+    "path":"folders/Sounds/Interactables.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -6,7 +6,7 @@ message_func_ran = false;  // tracks if a during message function has run
 
 show_choices = false; // if prompt, controls if choices displayed
 text_paused = false;  // control pause between answering prompt and next message
-newline_pause = 30;
+newline_pause = 22;
 coma_pause = 15;
 
 unfreeze_at_end = true;

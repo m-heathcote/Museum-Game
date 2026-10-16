@@ -8,6 +8,16 @@ if (player_in_range && !player_has_interacted && !show_list)
     draw_sprite_ext(spr_ctrl_interact, 0, _tx, _ty, 1, 1, 0, c_white, 0.9);
 }
 
+if (player_has_interacted && !in_first_viewing && !show_list)
+{
+    // Show "press T" prompt
+    var _margin = 20;
+    var _tx = _margin;
+    var _ty = GUI_H - _margin;
+    
+    draw_sprite_ext(spr_ctrl_todo, 0, _tx, _ty, 0.8, 0.8, 0, c_white, 0.4);
+}
+
 if (!show_list) exit;
     
 // Center coords
@@ -52,11 +62,12 @@ var _items = [
     "make sure EVERYTHING IS WHERE IT BELONGS BY THE END OF YOUR SHIFT AT 6AM !!!\n["
         + string(global.num_art_out_of_place) + " items out of place]"
 ];
+var _clock = instance_find(obj_clock, 0);
 var _checked = [
     global.door_locked,
     global.temps_set == 3,
     global.cobwebs_cleaned == 6,
-    0
+    (_clock.hour == 7 && global.num_art_out_of_place == 0) // in the final hour and nothing out of place
 ];
 
 // Set item draw settings

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_G5",
   "parent":{
-    "name":"NEW",
-    "path":"folders/Sounds/NEW.yy",
+    "name":"Interactables",
+    "path":"folders/Sounds/Interactables.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

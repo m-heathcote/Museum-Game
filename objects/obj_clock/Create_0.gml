@@ -17,7 +17,7 @@ am_index = 2;
 
 // TIME TIMES
 
-secs_for_30m = 8; // 10
+secs_for_30m = 8.5; // 8.5
 frames_for_30m = secs_for_30m * 60;
 
 secs_before_end_screen = 4;
@@ -27,8 +27,8 @@ secs_before_end_screen = 4;
 x_text_padding = 22;
 y_text_padding = 15;
 
-x_screen_padding = 28;
-y_screen_padding = 28;
+x_screen_padding = 22;
+y_screen_padding = 22;
 
 // DRAWING
 

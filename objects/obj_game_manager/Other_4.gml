@@ -1,9 +1,20 @@
+if (!instance_exists(obj_stats_manager))
+{
+    instance_create_depth(x, y, 0, obj_stats_manager);
+}
+
 if (room == rm_1_Museum)
 {
     randomise();
     
     // Ensure stats reset
     reset_stats();
+    
+    if (global.times_played > 0 && global.enable_intro_tutorial)
+    {
+        // Don't show tutorial again on retry
+        global.enable_intro_tutorial = false;
+    }
     
     // Get collision layer
     tiles_col = layer_tilemap_get_id("Tiles_Col");
@@ -45,9 +56,9 @@ if (room == rm_1_Museum)
     }
 }
 
-if (!instance_exists(obj_stats_manager))
+if (room == rm_End)
 {
-    instance_create_depth(x, y, 0, obj_stats_manager);
+    global.times_played++;
 }
 
 // Start background music

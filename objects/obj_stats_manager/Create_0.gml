@@ -11,3 +11,5 @@ global.door_locked = false;
 
 global.points = 0;
 global.fired = false;
+
+global.times_played = 0; // not reset on replay
