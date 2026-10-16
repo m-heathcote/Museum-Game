@@ -40,7 +40,7 @@ function look_at_note_and_list()
 function look_at_list()
 {
     // Play sound
-    audio_play_sound(snd_in_place, 0, false); // TODO: replace sound *************
+    audio_play_sound(snd_paper, 0, false);
     
     show_list = true;
     interactable = false;

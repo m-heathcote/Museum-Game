@@ -96,6 +96,8 @@ function create_dialog_database()
                         
                         var _clock = instance_find(obj_clock, 0);
                         _clock.show_clock = false;
+                        
+                        audio_play_sound(snd_paper, 0, false);
                     }
                     
                     return -1;
