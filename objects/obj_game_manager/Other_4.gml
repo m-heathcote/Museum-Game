@@ -54,12 +54,13 @@ if (room == rm_1_Museum)
         var _player = instance_find(obj_player, 0);
         _player.frozen = true;
     }
+    
+    // Start background music
+    global.music = audio_play_sound(snd_music, 0, true, 0);
+    audio_sound_gain(global.music, 0.6, 800);
 }
 
 if (room == rm_End)
 {
     global.times_played++;
 }
-
-// Start background music
-//audio_play_sound(snd_music_level, 0, 1);

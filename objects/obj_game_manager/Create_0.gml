@@ -4,6 +4,8 @@ global.enable_intro_tutorial = true; // SHOULD BE SET TO TRUE FOR GAME RELEASE
 
 global.DIALOGS = create_dialog_database();
 
+global.music = -1;
+
 tiles_col = undefined;
 
 delay_before_first_dialog = 38;

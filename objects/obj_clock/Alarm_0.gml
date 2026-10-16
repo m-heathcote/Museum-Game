@@ -45,6 +45,7 @@ if (clock_active)
         // END GAME
         clock_active = false;
         audio_play_sound(snd_time_up, 0, false);
+        audio_sound_gain(global.music, 0, secs_before_end_screen * 1000);
         alarm[1] = secs_before_end_screen * 60;
     }
 }
