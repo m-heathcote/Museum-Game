@@ -12,7 +12,8 @@ lock_1 = false;
 lock_2 = false;
 lock_3 = false;
 
-lock_snd = snd_click; // TODO: REPLACE **************
+lock_snd = snd_door_lock;
+snd_offset = 0.17;
 
 function update_stat()
 {
@@ -24,8 +25,6 @@ function update_stat()
 
 function lock_door()
 {
-    audio_play_sound(snd_pick_up, 0, false); // TODO: REPLACE **************
-
     in_use = true;
     interactable = false;
     

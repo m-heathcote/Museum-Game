@@ -5,7 +5,7 @@ if (!in_use) exit;
     
 if (keyboard_check_pressed(ord("1")))
 {
-    audio_play_sound(lock_snd, 0, false);
+    audio_play_sound(lock_snd, 0, false, 1, snd_offset);
     
     lock_1 = !lock_1;
     update_stat();
@@ -13,7 +13,7 @@ if (keyboard_check_pressed(ord("1")))
 
 if (keyboard_check_pressed(ord("2")))
 {
-    audio_play_sound(lock_snd, 0, false);
+    audio_play_sound(lock_snd, 0, false, 1, snd_offset);
     
     lock_2 = !lock_2;
     update_stat();
@@ -21,7 +21,7 @@ if (keyboard_check_pressed(ord("2")))
 
 if (keyboard_check_pressed(ord("3")))
 {
-    audio_play_sound(lock_snd, 0, false);
+    audio_play_sound(lock_snd, 0, false, 1, snd_offset);
     
     lock_3 = !lock_3;
     update_stat();

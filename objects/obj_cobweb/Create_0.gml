@@ -12,7 +12,7 @@ function clean_cobweb()
 {
     if (!fading)
     {
-        audio_play_sound(snd_pick_up, 0, false);
+        audio_play_sound(snd_clean_web, 0, false);
         
         global.cobwebs_cleaned += 1;
         

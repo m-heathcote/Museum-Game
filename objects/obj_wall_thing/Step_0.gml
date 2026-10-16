@@ -6,8 +6,6 @@ if (!in_use) exit;
 // ----- UP -----
 if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up))
 {
-    audio_play_sound(snd_click, 0, false);
-    
     if (current_setting < num_settings - 1)
     {
         if (current_setting == correct_setting)
@@ -17,6 +15,9 @@ if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up))
         
         current_setting++;
         image_index = current_setting;
+        
+        //audio_play_sound(snd_G5, 0, false);
+        audio_play_sound(snd_G5, 0, false, 1, 0, sounds[current_setting]);
         
         if (current_setting == correct_setting)
         {
@@ -28,8 +29,6 @@ if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up))
 // ----- DOWN -----
 if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down))
 {
-    audio_play_sound(snd_click, 0, false);
-    
     if (current_setting > 0)
     {
         if (current_setting == correct_setting)
@@ -39,6 +38,8 @@ if (keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down))
         
         current_setting--;
         image_index = current_setting;
+        
+        audio_play_sound(snd_G5, 0, false, 1, 0, sounds[current_setting]);
         
         if (current_setting == correct_setting)
         {

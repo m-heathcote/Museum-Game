@@ -31,4 +31,4 @@ var _max_y = _view_lower_y - _spr_h / 2 - _padding;
 var _x = clamp(_gui_origin_x, _min_x, _max_x);
 var _y = clamp(_gui_origin_y, _min_y, _max_y);
 
-draw_sprite_ext(spr, spr_ind, _x, _y, 1, 1, 0, c_white, spr_alpha);
+draw_sprite_ext(spr, spr_ind, _x, _y, 1.2, 1.2, 0, c_white, spr_alpha);

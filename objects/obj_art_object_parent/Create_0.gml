@@ -16,6 +16,8 @@ has_shadow_at_home = true;
 has_highlight_at_home = true;
 home_room = "";
 
+move_snd = snd_jump_high;
+
 // --- STATE ---
 
 at_home = true;
@@ -150,8 +152,16 @@ function jump_from_home()
         // Edit Stats
         global.num_art_out_of_place++;
         
+        // Create sound alert
+        audio_play_sound_at(
+            snd_out_of_place,
+            x, y, 0,
+            32, 1300, 1,
+            false, 0,
+            1.7
+        );
+        
         // Create visual alert
-        audio_play_sound(snd_click, 0, false);  // TODO: ADD BETTER SOUND HERE *****
         instance_create_depth(0, 0, 0,
             obj_move_alert,
             {
