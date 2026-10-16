@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":106.192314,
+  "duration":101.31,
   "exportDir":"",
   "name":"snd_music",
   "parent":{
