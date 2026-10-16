@@ -14,15 +14,15 @@ var _cx = x;
 var _cy = y;
 
 // Text lines
+var _door_locked_text = global.door_locked? "yes" : "no";
 var _text_lines = [
-    "*Put in place: " + string(_put_in_place),
-    "*Taken out: " + string(_took_out_place),
-    "Returned home: " + string(_put_in_place - _took_out_place),
-    "Out of place: " + string(_num_out),
+    //"*Put in place: " + string(_put_in_place),
+    //"*Taken out: " + string(_took_out_place),
+    "Items returned home: " + string(_put_in_place - _took_out_place),
+    "Items left out of place: " + string(_num_out),
+    "Locked the front door: " + _door_locked_text,
+    "Climate controllers set: " + string(global.temps_set) + "/3",
     "Cobwebs cleaned: " + string(global.cobwebs_cleaned) + "/6",
-    "Temps set: " + string(global.temps_set) + "/3",
-    "Locked door: " + string(global.door_locked),
-    "Points: " + string(global.points),
 ];
 var _num_lines = array_length(_text_lines);
 
