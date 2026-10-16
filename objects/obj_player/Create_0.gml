@@ -22,12 +22,13 @@ has_picked_up_art = false;
 
 // --- SPEED / MOVEMENT SETTINGS ---
 
-move_speed = 1.85;  // 1.85
-run_speed = 3.3;    // 3.3
-held_obj_speed_modifier = -1;
+move_speed = 1.85;         // 1.85
+run_speed = 3.4;           // 3.3
+run_carry_speed = 2.6;
 
-walk_anim_speed = 1;
-run_anim_speed = 1.8;   // 1.8
+walk_anim_speed = 1;       // 1
+run_anim_speed = 1.8;      // 1.8
+run_carry_anim_speed = 1.45;
 
 run_key = vk_shift;
 is_running = false;

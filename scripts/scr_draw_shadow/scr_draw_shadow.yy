@@ -6,7 +6,7 @@
   "name":"scr_draw_shadow",
   "parent":{
     "name":"Drawing Player",
-    "path":"folders/Scripts/Drawing Player.yy",
+    "path":"folders/Scripts/Player/Drawing Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

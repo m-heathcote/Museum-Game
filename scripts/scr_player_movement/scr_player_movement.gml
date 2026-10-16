@@ -40,7 +40,9 @@ function get_input()
 
 function update_speed()
 {
-    var _target_speed = is_running ? run_speed : move_speed;
+    var _target_speed = is_running
+                        ? ((held_obj == noone) ? run_speed : run_carry_speed)
+                        : move_speed;
     
     var _target_hsp = input_x * _target_speed;
     var _target_vsp = input_y * _target_speed;

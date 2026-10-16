@@ -6,7 +6,7 @@
   "name":"scr_player_movement",
   "parent":{
     "name":"Player Movement",
-    "path":"folders/Scripts/Player Movement.yy",
+    "path":"folders/Scripts/Player/Player Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

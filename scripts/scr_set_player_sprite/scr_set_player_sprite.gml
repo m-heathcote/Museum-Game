@@ -90,14 +90,16 @@ function get_direction(_angle)
 
 function update_animation_speed(_action)
 {
-    if (_action == "walk" || _action == "run")
+    if (_action == "walk" || _action == "run" || _action == "walk_carry")
     {
         var _speed = point_distance(0, 0, obj_player.hsp, obj_player.vsp);
-        var _max_speed = obj_player.is_running ? obj_player.run_speed : obj_player.move_speed;
+        var _max_speed = obj_player.is_running
+                    ? ((obj_player.held_obj == noone) ? obj_player.run_speed : obj_player.run_carry_speed)
+                    : obj_player.move_speed;
         
         var _max_image_speed = obj_player.is_running
-            ? obj_player.run_anim_speed
-            : obj_player.walk_anim_speed;
+                    ? ((obj_player.held_obj == noone) ? obj_player.run_anim_speed : obj_player.run_carry_anim_speed)
+                    : obj_player.walk_anim_speed;
         
         var _target_image_speed = (_speed / _max_speed) * (_max_image_speed);
         
