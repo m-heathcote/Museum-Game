@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Lighting",
-    "path":"folders/Sprites/Lighting.yy",
+    "name":"Itch",
+    "path":"folders/Sprites/Itch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
