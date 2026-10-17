@@ -59,7 +59,7 @@ else if (current_char < string_length(_str))
                 _voice = _message.voice;
             }
             
-            audio_play_sound(snd_speak, 1, false, 0.25, 0.07, random_range(_voice - 0.2, _voice + 0.2));
+            audio_play_sound(snd_speak, 1, false, 0.04, 0.07, random_range(_voice - 0.13, _voice + 0.13));
             alarm[0] = 5;
             pausing_between_sounds = true;
         }

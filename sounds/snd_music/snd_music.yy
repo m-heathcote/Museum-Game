@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":101.31,
+  "duration":99.673,
   "exportDir":"",
   "name":"snd_music",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_music.wav",
+  "soundFile":"snd_music.mp3",
   "volume":1.0,
 }
